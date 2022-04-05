@@ -1,0 +1,39 @@
+.navbatItems__wraper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   min-height: 52px;
+  
+}
+.navbar__items__list {
+   margin-top: 16px;
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 80%;
+   height: 100% 
+}
+
+.navbar__hamburger {
+   width: 30px;
+   height: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;   
+}
+
+.navbar__hamburger>span {
+   display: block;
+   width: 70%;
+   height: 4px;
+   margin: 0 auto;
+   background: black;
+}
+
+
+.navbar__social__link { 
+   width: 92px;
+   display: flex;
+   justify-content: space-between;
+}

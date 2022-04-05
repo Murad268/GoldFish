@@ -1,0 +1,59 @@
+.eventListItem {
+   position: relative;
+   margin-top: 30px;
+   height: 420px;
+   cursor: pointer;
+}
+
+.eventListItem__img {
+   width: 100%;
+   height: 100%;
+}
+.eventListItem__img img {
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
+   border-radius: 20px
+ }
+
+ .eventListItem__footer {
+    padding: 22px 32px 22px 22px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background: #2A2A2A;
+   opacity: 0.79;
+   border-radius: 0px 0px 9px 9px;
+ }
+   .event_name_time {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 11px;
+   }
+ .event__name {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 22px;
+   color: #F9A43F;
+ }
+
+ .event__time {
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 22px;
+   color: #FFFFFF;
+ }
+
+ .event__desc {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 21px;
+   color: #FFFFFF;
+ }

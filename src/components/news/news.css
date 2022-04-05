@@ -1,0 +1,28 @@
+.news {
+   padding: 85px 0 85px 0;
+}
+.news__wrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 356px);
+   width: 100%;
+   justify-content: space-between;
+}
+.news__load {
+   width: 311px;
+   height: 71px;
+   border: 3px solid #F9A43F;
+   box-sizing: border-box;
+   border-radius: 9px;
+   display: block;
+   margin: 38px auto 0 auto;
+   background: inherit
+}
+.news__tittle {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 37px;
+   color: #363636;
+   margin-bottom: 21px;
+}

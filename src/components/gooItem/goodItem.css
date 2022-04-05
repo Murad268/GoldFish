@@ -1,0 +1,153 @@
+.good__item {
+   background: #FFFFFF;
+   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+   border-radius: 9px;
+   width: 255px;
+   height: 409px;
+   padding: 15px 31px 31px 31px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin-right: 30px;
+   position: relative;
+}
+
+.good__item__img {
+   width: 193px;
+   height: 168px;
+}
+
+.good__item__img img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+
+.good__item__info {
+   display: flex;
+   align-items: center;
+   width: 151px;
+   margin: 0 auto;
+   margin-top: 10px;
+}
+
+.humans__count, .good__time {
+   width: 59px;
+   display: flex;
+   align-items: center;
+}
+
+.humans__count img, .good__time img {
+   width: 15px;
+   height: 15px;
+   object-fit: cover;
+}
+.count, .time {
+   margin-left: 5px;
+}
+.count, .time, .good__age {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 11px;
+   line-height: 13px;
+   color: #2A2A2A;
+}
+
+.good__name {
+   text-align: center;
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 128.68%;
+   text-align: center;
+   color: #2A2A2A;
+   margin: 4px auto 0 auto;
+}
+
+.good__price {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 21px;
+   line-height: 24px;
+   color: #2A2A2A;
+   text-align: center;
+   margin-top: 9px;
+}
+.old__god__price {
+   margin-right: 10px;
+   cursor: pointer;
+}
+.old__god__price:hover .secret {
+   display: block;
+}
+.bag {
+   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+   border-radius: 9px;
+   width: 163px;
+   height: 34px;
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   color: #FFFFFF;
+   border: none;
+   display: block;
+   margin: 0 auto 12px auto;
+}
+
+.buy {
+   border: 2px solid #F9A43F;
+   box-sizing: border-box;
+   border-radius: 9px;
+   width: 163px;
+   height: 34px;
+   background: inherit;
+   display: block;
+   margin: 0 auto;
+}
+
+.good__prices {
+   display: flex;
+   margin: 0 auto;
+   align-items: end;
+   position: relative;
+}
+
+.secret {
+   border: 2px solid #2A2A2A;
+   transform: rotate(-15.57deg);
+   position: absolute;
+   top: 40px;
+   left: -10px;
+   background: red;
+   color: white;
+   border: none;
+   padding: 3px;
+   display: none;
+}
+
+.good__discount__percent {
+   background: #F9A43F;
+   border-radius: 14px;
+   width: 69px;
+   height: 29px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: 'Open Sans';
+   font-style: normal;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 22px;
+   color: #FFFFFF;
+}
+
+.good__discount__percent {
+   position: absolute;
+   top: 20px;
+   right: 36px;
+}

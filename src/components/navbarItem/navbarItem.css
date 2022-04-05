@@ -1,0 +1,9 @@
+.navbar__item a{
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   color: #2A2A2A;
+   text-decoration: none;
+}

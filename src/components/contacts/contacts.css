@@ -1,0 +1,123 @@
+.contacts {
+   padding: 85px 0 85px 0;
+}
+.contacts__tittle {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 37px;
+   color: #2A2A2A;
+   margin-bottom: 21px;
+}
+.contact__wrapper {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.contacts__infos {
+   width: 40%;
+}
+.contacts__info {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin-top: 18px;
+}
+.contacts__info img {
+   display: block;
+   width: 29px;
+   height: 30px;
+   object-fit: fill;
+   margin-right: 22px;
+}
+.contacts__info span {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 26px;
+   color: #2A2A2A;
+}
+
+.formTittle {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 26px;
+   color: #2A2A2A;
+   margin: 35px 0 21px 0;
+}
+.manMenuForm input {
+   margin-bottom: 14px;
+   opacity: 0.33;
+   border: 1px solid #2A2A2A;
+   box-sizing: border-box;
+   border-radius: 9px;
+   width: 445px;
+   height: 44px;
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #2A2A2A;
+   opacity: 0.33;
+   padding: 13px 0 14px 19px;
+}
+.manMenuForm textarea {
+   opacity: 0.33;
+   border: 1px solid #2A2A2A;
+   box-sizing: border-box;
+   border-radius: 9px;
+   width: 445px;
+   height: 88px;
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #2A2A2A;
+   opacity: 0.33;
+   padding: 13px 0 0 19px;
+}
+.manMenuFormLabel {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #2A2A2A;
+   display: block;
+   margin-bottom: 7px;
+}
+.manMenuForm__button {
+   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+   border-radius: 9px;
+   width: 446px;
+   height: 46px;
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 22px;
+   color: #FFFFFF;
+   border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 21px;
+}
+.formTittle__alert, .formTittle__alert a {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 91.1%;
+   color: #000000;
+   opacity: 0.68;
+   margin-top: 15px;
+   width: 404px;
+}

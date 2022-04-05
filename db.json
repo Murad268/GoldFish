@@ -1,0 +1,189 @@
+{
+  "catagories": [
+    {
+      "id": 1,
+      "subTittle": "Настольная игра варгейм",
+      "tittle": "Warhmmer games",
+      "img": "https://assets.dicebreaker.com/MagicTheGathering_ManaColours_DrakutethMawofFlames.png/BROK/resize/844%3E/format/jpg/quality/80/MagicTheGathering_ManaColours_DrakutethMawofFlames.png"
+    },
+    {
+      "id": 2,
+      "subTittle": "Самая популярная карточная игра",
+      "tittle": "Magic: the Gathering",
+      "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277587021_352070170194654_7673070682057710349_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=B2VXy8IiTSMAX9FduLS&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT8fkjVYrvTkUN5ZqN2sxUHv0e3fK5iwbbyeYy8kUIkjkA&oe=624E10B1"
+    },
+    {
+      "id": 3,
+      "subTittle": "Попробуй игры разных жанров",
+      "tittle": "Весь католог ",
+      "img": "https://assets.dicebreaker.com/Magicthegathering-cardgame-documentary.jpg/BROK/resize/660%3E/format/jpg/quality/80/Magicthegathering-cardgame-documentary.jpg"
+    }
+  ],
+  "events": [
+    {
+       "id": 1,
+       "name": "Halloween c GoldFish",
+       "desc": "Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что будет с тем,кого убили..",
+       "time": "31 октября 2021 г. 19:00",
+       "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277781515_352674473467557_8023959231845050576_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=vuwUinyFx0UAX-DWudm&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT9h1HZGtdVuYmxKNextBncgkGEjN9LnSVrxHoH00Ms63A&oe=624FE412"
+    },
+    {
+       "id": 2,
+       "name": "Турнир Warhammer",
+       "desc": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!",
+       "time": "9 ноября 2021 г. 18:30",
+       "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277799398_352674493467555_6806978554436491554_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=tnwA8iZ6z9AAX_2Lj5u&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT9nW0ilZcu5gj5c1NR7sGuSZzLrRCspuqh1gUZeH1clbA&oe=624F8E10"
+    },
+    {
+       "id": 3,
+       "name": "Турнир Warhammer",
+       "desc": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!",
+       "time": "9 ноября 2021 г. 18:30",
+       "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277799398_352674493467555_6806978554436491554_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=tnwA8iZ6z9AAX_2Lj5u&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT9nW0ilZcu5gj5c1NR7sGuSZzLrRCspuqh1gUZeH1clbA&oe=624F8E10"
+    },
+    {
+       "id": 4,
+       "name": "Турнир Warhammer",
+       "desc": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!",
+       "time": "9 ноября 2021 г. 18:30",
+       "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277799398_352674493467555_6806978554436491554_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=tnwA8iZ6z9AAX_2Lj5u&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT9nW0ilZcu5gj5c1NR7sGuSZzLrRCspuqh1gUZeH1clbA&oe=624F8E10"
+    }
+    ,   {
+       "id": 5,
+       "name": "Турнир Warhammer",
+       "desc": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!",
+       "time": "9 ноября 2021 г. 18:30",
+       "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277799398_352674493467555_6806978554436491554_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=tnwA8iZ6z9AAX_2Lj5u&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT9nW0ilZcu5gj5c1NR7sGuSZzLrRCspuqh1gUZeH1clbA&oe=624F8E10"
+    }
+ ],
+ "preview": [
+  {
+    "id": 1,
+    "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277782333_352583696809968_1957546822798507696_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=zUeu2RLdi3sAX_20wu-&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT_C6Lynb7yGR79P0jZFSbgZlC8Ct9oVQBuYu3qcesBuKA&oe=625085F6",
+    "desc": "Настольные игры"
+  },
+  {
+    "id": 2,
+    "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277798177_352583410143330_6352666755768567305_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=7vWy9LVjJPgAX8XKxEz&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT_kn_eibQcBkufL1v3hcdWBN554OF4LpfGE33B6E1thAQ&oe=624F67D5",
+    "desc": "Краски"
+  },
+  {
+    "id": 3,
+    "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277820362_352583123476692_3057898240644921130_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=RWAfFvT2tREAX8oX9m9&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT9vTOz0NuLjWlyqSfkHgsEtNWXVM1zfhZIKY4ya1JQ6jQ&oe=62508B59",
+    "desc": "Варгеймы"
+  },
+  {
+    "id": 4,
+    "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277818017_352583323476672_2305840450051323993_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=1BMOUsidFiEAX-CnxvU&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT8-OKFHfzEK540Rj8XUQrM0GtSANtY9JRlMvy9FTW2dOA&oe=624EDF7F",
+    "desc": "Magic:the Cathering"
+  },
+  {
+    "id": "all",
+    "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277814154_352583233476681_7850828748533065216_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=O1rchiIZpzQAX96ZWNk&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT-frxjX7F1H5zzgatHKGfrPF8ZW8LSU9WRL20ThbKMwOw&oe=624EA4F1",
+    "desc": "Весь каталог"
+    
+  }
+],
+"news": [
+  {
+    "id": 1,
+    "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/278009519_353125960089075_2075045753477982125_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=bPUm9fhZnNwAX8mxwFY&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT9X5PMQ0tlRMvR6z7MwOuXV8m46t-8pz3_4Np7EFmRmzw&oe=62518A21",
+    "tittle": "Аэронавтика Империалис: введение в игру",
+    "desc": "Детально ознакомимся с правилами игры"
+  },
+  {
+    "id": 2,
+    "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277990325_353126010089070_9106779705707379583_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=I80d95YQLP4AX_0cI0E&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT_wiyLMH53kWKNkt2DE1sg_kzJ7MFEUobugID9sfugx5w&oe=62516A57",
+    "tittle": "Лучшие настолки в Steam для игры с друзьми на карантине",
+    "desc": "По рейтингу 2021"
+  },
+  {
+    "id": 3,
+    "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277998534_353125993422405_1080447751882864134_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=Qib8JUrVO2gAX9btzna&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT8r9c3RWwox1iECGCFfIW1cQknFWP234s1bNk-OAE36tA&oe=62515268",
+    "tittle": "Желанные, но маловероятные релизы ",
+    "desc": "Небольшой список «а вот бы...»"
+  }
+],
+"goods": [
+    {
+      "id": 1,
+      "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277814055_352612040140467_8453699312292074416_n.jpg?stp=c13.0.168.168a_dst-jpg&_nc_cat=102&ccb=1-5&_nc_sid=da31f3&_nc_ohc=DIDAMkfJcZYAX8NeFYN&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT-2IcwpeBPfl5HSWjPi4Z6vwpA50NhJV5ZDm83B9nJrPQ&oe=624EEC81",
+      "hum": "2-4",
+      "time": "60-80",
+      "age": "18+",
+      "name": "Warhammer 40,000: Chaos Space Marines",
+      "price": 3657,
+      "discount": false
+
+   
+      
+    },
+    {
+      "id": 2,
+      "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277749950_352612003473804_7023355163416856682_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=da31f3&_nc_ohc=gP4sbqcwHWYAX93Y8ki&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT8m7G3WTbVARwfXS2cFn8eHIYEbQt32FQbubaYVDsUecw&oe=624F3F95",
+      "hum": "2-4",
+      "time": "60-80",
+      "age": "18+",
+      "name": "На марсеs",
+      "price": 3657,
+      "discount": false
+   
+    },
+    {
+      "id": 3,
+      "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277984867_352611993473805_2317503360349890584_n.jpg?stp=c0.0.153.155a_dst-jpg&_nc_cat=110&ccb=1-5&_nc_sid=da31f3&_nc_ohc=BfnNWvYar6gAX9EpsSN&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT-Sb-YMH-WmN4Tkv9iNBgqzns1aFR1YwyzomYnnGTv0Rg&oe=624F6620",
+      "hum": "2-4",
+      "time": "60-80",
+      "age": "18+",
+      "name": "Broken Realms: Horrek's Dreadlance",
+      "price": 3657,
+      "discount": false
+    
+    },
+    {
+      "id": 4,
+      "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277820225_352611973473807_6810678050574766997_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=da31f3&_nc_ohc=74FGE4-KiSAAX8jErF3&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT8PAa18OVFzMZtgQFMda40uFjTuuGzcY-aCSSoIcP2RQg&oe=6250584F",
+      "hum": "2-4",
+      "time": "60-80",
+      "age": "18+",
+      "name": "Orks: Ghazghkull Thraka Коллекционный выпуск",
+      "price": 3657,
+      "discount": false
+
+    },
+    {
+      "id": 5,
+      "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277991453_352611910140480_1747749685988281362_n.jpg?stp=c11.0.170.170a_dst-jpg&_nc_cat=100&ccb=1-5&_nc_sid=da31f3&_nc_ohc=00WlLPw6aX0AX-zQejv&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT_TaNENsJT8CPgFf8sJfDdoBce8Ap4D4hUsmDX9qD5VDA&oe=624FE6F5",
+      "hum": "2-4",
+      "time": "60-80",
+      "age": "18+",
+      "name": "Warhammer 40,000: Chaos Space Marines",
+      "price": 4350,
+      "discount": true,
+      "percent": 15
+    },
+    {
+      "id": 6,
+      "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277991453_352611910140480_1747749685988281362_n.jpg?stp=c11.0.170.170a_dst-jpg&_nc_cat=100&ccb=1-5&_nc_sid=da31f3&_nc_ohc=00WlLPw6aX0AX-zQejv&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT_TaNENsJT8CPgFf8sJfDdoBce8Ap4D4hUsmDX9qD5VDA&oe=624FE6F5",
+      "hum": "2-4",
+      "time": "60-80",
+      "age": "18+",
+      "name": "Таверна Красный дракон",
+      "price": 4350,
+      "discount": true,
+      "percent": 15
+    },
+    {
+      "id": 7,
+      "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277782333_352611900140481_8757200052380706961_n.jpg?stp=c0.3.142.142a_dst-jpg&_nc_cat=102&ccb=1-5&_nc_sid=da31f3&_nc_ohc=boMQujci2oMAX_l1oc3&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT-RDUPK7cETtCYXqbyJVX6k8R9XL3JF4PK4xWHC8O1TmA&oe=624F40AB",
+      "hum": "2-4",
+      "time": "60-80",
+      "age": "18+",
+      "name": "Гравити Фолз: Спасти Пухлю",
+      "price": 4350,
+      "discount": true,
+      "percent": 15
+    }
+]
+ 
+}

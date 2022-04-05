@@ -1,0 +1,51 @@
+.sliderItem {
+   width: 967px;
+   height: 320px;
+   position: relative;
+}
+.sliderItem img{
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
+}
+
+.sliderItem__tittle {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 28px;
+   line-height: 33px;
+   color: #FFFFFF;
+   position: absolute;
+   left: 35px;
+   bottom: 33px;
+}
+
+
+.sldierItem__subtittle {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #FFFFFF;
+   position: absolute;
+   left: 35px;
+   bottom: 68px;
+}
+.sliderItem__button {
+   position: absolute;
+   right: 28px;
+   bottom: 28px;
+   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+   border-radius: 9px;
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+   color: #FFFFFF;
+   width: 137px;
+   height: 32px;
+   border: none
+}

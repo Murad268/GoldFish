@@ -1,0 +1,25 @@
+.abaut {
+   padding: 60px 0 60px 0;
+}
+.abaout__img {
+   width: 45%;
+   height: 460px;
+}
+.abaout__img img {
+   width: 100%;
+   height: 100%;
+   object-fit: fill;
+   border-radius: 20px;
+}
+
+.abaout__wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.abaut__desc {
+   width: 50%;
+   text-align: justify;
+ 
+}

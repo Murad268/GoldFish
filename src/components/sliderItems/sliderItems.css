@@ -1,0 +1,41 @@
+.slider__wrapper {
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+}
+
+.slider__inner {
+   display: flex;
+   width: max-content;
+   transition: 1s all;
+}
+
+.nextSlider {
+   position: absolute;
+   right: 30px;
+   bottom: 50%;
+   cursor: pointer;
+   width: 25px;
+   height: 25px;
+   background: #2A2A2A;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 100%;
+   transform: translateY(50%);
+}
+
+.prevSlider {
+   position: absolute;
+   left: 30px;
+   bottom: 50%;
+   cursor: pointer;
+   width: 25px;
+   height: 25px;
+   background: #2A2A2A;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 100%;
+   transform: translateY(50%);
+}

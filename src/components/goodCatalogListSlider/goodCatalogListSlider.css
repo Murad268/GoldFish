@@ -1,0 +1,56 @@
+.goodSlider {
+
+   position: relative;
+}
+.goodSlider__wrapper {
+   width: 100%;
+   height: 100%;
+}
+.over {
+   padding: 85px 0 81px 0;
+   overflow-x: hidden;
+}
+.goodSlider__inner {
+   display: flex;
+   width: max-content;
+   transition: all 0.8s;
+}
+
+.goodRight {
+   position: absolute;
+   right: 30px;
+   bottom: 50%;
+   background: inherit;
+   border: none;
+   width: 10px;
+   height: 20px;
+   transform: translateY(50%);
+   cursor: pointer;
+}
+
+.goodRight img, .goodLeft img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.goodLeft {
+   position: absolute;
+   left: 30px;
+   top: 50%;
+   background: inherit;
+   border: none;
+   width: 10px;
+   height: 20px;
+   transform: translateY(50%);
+   cursor: pointer;
+}
+
+.goodSlider__tittle {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 37px;
+   color: #2A2A2A;
+   margin-bottom: 21px;
+}
