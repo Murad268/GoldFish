@@ -1,0 +1,37 @@
+.listItem {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 22px;
+   color: #2A2A2A;
+   list-style: none;
+   margin-bottom: 10px;
+   position: relative;
+   height: 40px;
+   overflow: hidden;
+   width: 215px;
+   cursor: pointer;
+   transition: 0.3s all;
+}
+.catalogPage__list li img {
+   display: block;
+   position: absolute;
+   right: 17px;
+   top: 8px;
+   cursor: pointer;
+}
+.catalogPage__list li li {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 208%;
+   color: rgba(42, 42, 42, 0.85);
+   margin-top: 10px;
+   width: 215px;
+   list-style: none;
+}
+.listItem__active{
+   height: max-content;
+}
