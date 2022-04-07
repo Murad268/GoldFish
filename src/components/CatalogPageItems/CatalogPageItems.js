@@ -298,8 +298,11 @@ const CatalogPageItems = () => {
 
   
    useEffect(() => {
-      res.getRes("http://localhost:3007", goodNem).then(res => {
-         setGoods(res)
+      res.getRes("http://localhost:3000", "goods").then(res => {
+        
+          setGoods(res)
+     
+      
       })
    },[goodNem])
    const listVisibility = (e) => {
@@ -318,7 +321,10 @@ const CatalogPageItems = () => {
                     <ul className="catalogPage__list">
                       {
                           lists.map(list => {
-                            return <CatalogListItem list={list} key={list.id}/>
+                         
+                              return <CatalogListItem list={list} key={list.id}/>
+                            
+                            
                           })
                       }
                       <div onClick={listVisibility} className='listBtn'></div>
@@ -404,6 +410,9 @@ const CatalogPageItems = () => {
                   <div className="goods__wrapper">
                      {
                         goods.map(good => {
+                          if(good.for != goodNem) {
+                            return false
+                          }
                            return <GoodItem key={good.id} good={good}/>
                         })
                      }
