@@ -7,6 +7,7 @@
    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
    border-radius: 9px;
    width: max-content;
+   margin-right: 30px;
 }
 hr {
    width: 100%;
@@ -107,4 +108,34 @@ hr {
 
 #humanCount__range {
    margin-bottom: 7px;
+}
+
+.catalogPageItems__wrapper {
+   display: flex; 
+}
+.goods__wrapper {
+   display: flex;
+}
+.all_acategory {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 22px;
+   color: #2A2A2A;
+   list-style: none;
+   position: relative;
+   height: 40px;
+   overflow: hidden;
+   cursor: pointer;
+}
+.all_acategory ul {
+   margin-top: 14px;
+ 
+}
+.all_acategory ul img {
+   display: block;
+   position: absolute;
+   top: 0;
+   right: 16px;
 }

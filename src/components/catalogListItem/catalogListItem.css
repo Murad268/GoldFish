@@ -8,19 +8,26 @@
    list-style: none;
    margin-bottom: 10px;
    position: relative;
-   height: 40px;
+   height: 42px;
    overflow: hidden;
    width: 215px;
    cursor: pointer;
    transition: 0.3s all;
 }
-.catalogPage__list li img {
+.listBtn{
    display: block;
    position: absolute;
    right: 17px;
-   top: 8px;
+   top: -15px;
    cursor: pointer;
+   width:14px;
+   height: 14px;
+   background: url('../../images/list/Vector\ \(1\).png') center center/contain no-repeat
 }
+.listBtn__active {
+   background: url("../../images/list/up.png") center center/contain no-repeat
+}
+
 .catalogPage__list li li {
    font-family: 'Trebuchet MS';
    font-style: normal;
@@ -32,6 +39,6 @@
    width: 215px;
    list-style: none;
 }
-.listItem__active{
+.listItem__active {
    height: max-content;
 }

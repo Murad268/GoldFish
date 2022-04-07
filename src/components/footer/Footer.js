@@ -36,11 +36,11 @@ const Footer = () => {
                         <h3>
                             <img src={logo} alt="" />
                         </h3>
-                        <p>
+                        <div>
                             <div><a href="">+7 (495) 911-10-11</a> </div>
                             <div><a href="">msk@magicgoldfish.ru</a></div>
                             <div>г. Москва ст.м. Таганская Малый Дровяной переулок 6</div>
-                        </p>
+                        </div>
                         <button className="footer__button">Заказать звонок</button>
                     </div>
                     <div className="col item social">

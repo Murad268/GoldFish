@@ -1,25 +1,33 @@
 import React from 'react';
 import arrowDown from '../../images/list/Vector (1).png'
+import arrowUp from '../../images/list/up.png'
 import './catalogListItem.css'
 const CatalogListItem = ({list}) => {
    const listVisibility = (e) => {
-      e.target.classList.toggle("listItem__active")
+      e.target.closest("li").classList.toggle("listItem__active")
+      e.target.classList.toggle("listBtn__active")
    }
-   console.log(list.variants[2].goods)
+
    return (
-      <li className='listItem' onClick={listVisibility}>
+      <li className='listItem' >
          {list.name}
-        
+       
          
-        <ul>
+        <ul className='listOfList'>
          {
                list.variants.map(variant => {
-                  return <li key={variant.id}>{variant.name}</li>
+                  return <li onClick={variant.function} key={variant.id}>{variant.name}</li>
                })
             
-            }
+         }
+           
+               <div onClick={listVisibility} className='listBtn'>
+                  
+                 
+               </div>
+          
         </ul>
-            <img onClick={listVisibility} src={arrowDown} alt="" />      
+                  
       </li>
    );
 };
