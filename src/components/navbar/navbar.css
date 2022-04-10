@@ -12,6 +12,7 @@
 .navbar__logo {
    width: 157px;
    height: 37px;
+   cursor: pointer;
 }
 
 .navbar__logo img {

@@ -1,4 +1,4 @@
-.navbar__item a{
+.navbar__item a, .catalog__link{
    font-family: 'Trebuchet MS';
    font-style: normal;
    font-weight: 700;
@@ -6,4 +6,7 @@
    line-height: 19px;
    color: #2A2A2A;
    text-decoration: none;
+}
+.catalog__link:hover {
+   color: #2A2A2A;
 }

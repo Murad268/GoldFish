@@ -14,6 +14,7 @@
    cursor: pointer;
    transition: 0.3s all;
 }
+
 .listBtn{
    display: block;
    position: absolute;
@@ -28,7 +29,7 @@
    background: url("../../images/list/up.png") center center/contain no-repeat
 }
 
-.catalogPage__list li li {
+.liItem {
    font-family: 'Trebuchet MS';
    font-style: normal;
    font-weight: 400;
@@ -38,6 +39,10 @@
    margin-top: 10px;
    width: 215px;
    list-style: none;
+}
+.liItem__active {
+   font-weight: 900;
+   color: black
 }
 .listItem__active {
    height: max-content;

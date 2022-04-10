@@ -2,7 +2,7 @@
    padding: 30px 0 85px 0;
 }
 .catalog__filter {
-   padding: 24px 36px 17px 34px;
+   padding: 24px 36px 17px 22px;
    background: #FFFFFF;
    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
    border-radius: 9px;
@@ -41,6 +41,8 @@ hr {
    border-radius: 9px;
    margin-right: 20px;
 }
+
+
 .catalog__filter input[type = "range"] {
    width: 100%;
    height: 2px;
@@ -72,7 +74,7 @@ hr {
    opacity: 0.59;
    padding-left: 13px;
 }
-.catalog__filter input[type = "checkbox" ] {
+.catalog__filter input[type = "radio" ],  .catalog__filter input[type = "checkbox" ]{
    width: 21px;
    height: 21px;
    border: 1px solid #2A2A2A;
@@ -95,26 +97,15 @@ hr {
    margin: 44px auto 0 auto;
    display: block;
 }
-.humanCount {
-   display: flex;
-   width: 100%;
-   justify-content: space-between;
-   font-family: 'Trebuchet MS';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 19px;
-   color: #2A2A2A;
-}
 
-#humanCount__range {
-   margin-bottom: 7px;
-}
 
 .catalogPageItems__wrapper {
    display: flex; 
 }
 .goods__wrapper {
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(3, 255px);
+   gap: 10px;
 }
 .all_acategory {
    font-family: 'Trebuchet MS';

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 import NavbarItem from '../navbarItem/NavbarItem';
 import './navbarItems.css'
 import insta from '../../images/navbar/bi_instagram.png'
@@ -56,7 +57,12 @@ const NavbarItems = () => {
                <ul className='navbar__items__list'>
                {
                      states.map(state => {
-                        return <NavbarItem key={state.id} value = {state.value}/>
+                        if(state.value == "Каталог") {
+                           return <Link className='catalog__link' to="/catalog">{state.value}</Link>
+                        }
+                           return <NavbarItem key={state.id} value = {state.value}/>
+                        
+                        
                      })
                }
             </ul>

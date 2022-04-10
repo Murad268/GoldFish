@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './navbar.css'
 import logo from '../../images/navbar/l3 1.png'
 import tel from '../../images/navbar/Vector.png'
@@ -12,9 +13,9 @@ const Navbar = () => {
       <div className="nav">
        <div className="container">
          <div className="navbar__wrapper">
-            <div className="navbar__logo">
+            <Link to="/" className="navbar__logo">
                <img src={logo} alt="" />
-            </div>
+            </Link>
             <div className="navbar__search">
                <input type="text" />
                <img src={lupa} alt="" />

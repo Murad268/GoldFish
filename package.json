@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "font-awesome": "^4.7.0",
+    "nouislider": "^15.5.1",
+    "nouislider-react": "^3.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "react-ui-slider": "^1.0.0",
     "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.4"
   },
