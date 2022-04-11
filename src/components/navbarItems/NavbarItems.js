@@ -9,12 +9,12 @@ import Modal from '../modal/Modal';
 const NavbarItems = () => {
    const [modalActive, setModalActive] = useState(false)
    const [states, setStates] = useState([
-      {id: 1, value: "Каталог"},
-      {id: 2, value: "Wharhammer"},
-      {id: 3, value: "Magic:the Cathering"},
-      {id: 4, value: "Мероприятия"},
-      {id: 5, value: "О центре"},
-      {id: 6, value: "Контакты"},
+      {id: 1, value: "Каталог", to: "catalog"},
+      {id: 2, value: "Wharhammer", to: ""},
+      {id: 3, value: "Magic:the Cathering", to: ""},
+      {id: 4, value: "Мероприятия", to: "events"},
+      {id: 5, value: "О центре", to: "about"},
+      {id: 6, value: "Контакты", to: ""},
    ])
    const modalActivated = (e) => {
         document.querySelector(".navbar__hamburger").classList.toggle("active__hambuger")
@@ -57,10 +57,8 @@ const NavbarItems = () => {
                <ul className='navbar__items__list'>
                {
                      states.map(state => {
-                        if(state.value == "Каталог") {
-                           return <Link className='catalog__link' to="/catalog">{state.value}</Link>
-                        }
-                           return <NavbarItem key={state.id} value = {state.value}/>
+                        
+                           return <NavbarItem to={state.to} key={state.id} value = {state.value}/>
                         
                         
                      })

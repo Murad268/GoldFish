@@ -22,8 +22,14 @@
    display: block;
    margin: 38px auto 0 auto;
    border: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
 }
-
+.event__load:hover {
+   color: #FFFFFF;
+}
 .eventList__tittle {
    font-family: 'Trebuchet MS';
    font-style: normal;

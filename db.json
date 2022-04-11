@@ -23,6 +23,7 @@
     {
        "id": 1,
        "name": "Halloween c GoldFish",
+       "for": "magic",
        "desc": "Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что будет с тем,кого убили..",
        "time": "31 октября 2021 г. 19:00",
        "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277781515_352674473467557_8023959231845050576_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=vuwUinyFx0UAX-DWudm&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT9h1HZGtdVuYmxKNextBncgkGEjN9LnSVrxHoH00Ms63A&oe=624FE412"
@@ -30,6 +31,7 @@
     {
        "id": 2,
        "name": "Турнир Warhammer",
+       "for": "warhammer",
        "desc": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!",
        "time": "9 ноября 2021 г. 18:30",
        "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277799398_352674493467555_6806978554436491554_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=tnwA8iZ6z9AAX_2Lj5u&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT9nW0ilZcu5gj5c1NR7sGuSZzLrRCspuqh1gUZeH1clbA&oe=624F8E10"
@@ -37,6 +39,7 @@
     {
        "id": 3,
        "name": "Турнир Warhammer",
+       "for": "gameNight",
        "desc": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!",
        "time": "9 ноября 2021 г. 18:30",
        "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277799398_352674493467555_6806978554436491554_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=tnwA8iZ6z9AAX_2Lj5u&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT9nW0ilZcu5gj5c1NR7sGuSZzLrRCspuqh1gUZeH1clbA&oe=624F8E10"
@@ -44,17 +47,51 @@
     {
        "id": 4,
        "name": "Турнир Warhammer",
+       "for": "commandBattle",
        "desc": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!",
        "time": "9 ноября 2021 г. 18:30",
-       "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277799398_352674493467555_6806978554436491554_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=tnwA8iZ6z9AAX_2Lj5u&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT9nW0ilZcu5gj5c1NR7sGuSZzLrRCspuqh1gUZeH1clbA&oe=624F8E10"
-    }
-    ,   {
+       "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/278171359_356933546374983_5639370855384923247_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=7sExC5UDAqEAX_IoiWt&_nc_oc=AQnb6cxseMBuy0NBCAAqK9SEyjpsB8cpdKWjvDYP1jRw01CO0AX69YdmfuHBFtS7evU&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT_Buv4eYQoLjOSbyPfEMn--KLIXVOU3WAnffIPAiHQBJA&oe=6259CFB3"
+    },   
+    {
        "id": 5,
        "name": "Турнир Warhammer",
+       "for": "train",
        "desc": "Готов сразиться в ожесточенной битве Warhammer? Нет? Мы тебя обязтально научим!",
        "time": "9 ноября 2021 г. 18:30",
+       "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277804051_356933549708316_6793813735397716193_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=A9t6Xy84fwQAX_38CAj&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT8nkpg6iU04-Dd_p3yYvx_EEjr3iT6pZgLJjYPBa7yv0w&oe=62590572"
+    },
+    {
+       "id": 6,
+       "name": "Halloween c GoldFish",
+       "for": "train",
+       "desc": "Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что будет с тем,кого убили..",
+       "time": "9 ноября 2021 г. 18:30",
        "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277799398_352674493467555_6806978554436491554_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=tnwA8iZ6z9AAX_2Lj5u&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT9nW0ilZcu5gj5c1NR7sGuSZzLrRCspuqh1gUZeH1clbA&oe=624F8E10"
-    }
+    },
+    {
+      "id": 7,
+      "name": "Вечер настольных игр",
+      "for": "train",
+      "desc": "Еженедельные настольные игротеки в различные игры.Встречи проходят в антикафе, в кафе и библиотеках.  ",
+      "time": "10.12.2021 18:00",
+      "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277804051_356933549708316_6793813735397716193_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=A9t6Xy84fwQAX_38CAj&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT8nkpg6iU04-Dd_p3yYvx_EEjr3iT6pZgLJjYPBa7yv0w&oe=62590572"
+   },
+   {
+    "id": 8,
+    "name": "Halloween c GoldFish",
+    "for": "train",
+    "desc": "Мы соберемся,чтобы узнать,кто же все-таки был Мафией и что будет с тем,кого убили..",
+    "time": "31.10.2022 19:00",
+    "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/278171359_356933546374983_5639370855384923247_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=7sExC5UDAqEAX_IoiWt&_nc_oc=AQnb6cxseMBuy0NBCAAqK9SEyjpsB8cpdKWjvDYP1jRw01CO0AX69YdmfuHBFtS7evU&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT_Buv4eYQoLjOSbyPfEMn--KLIXVOU3WAnffIPAiHQBJA&oe=6259CFB3"
+  },
+  {
+    "id": 9,
+    "name": "Вечер настольных игр",
+    "for": "train",
+    "desc": "Еженедельные настольные игротеки в различные игры.Встречи проходят в антикафе, в кафе и библиотеках.  ",
+    "time": "10.12.2021 18:00",
+    "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/278186494_356933606374977_5571651001637924049_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=bnIaApsvhG8AX_PVvzs&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT9tMuMkBe9iTm-6Dxc5K10vNHisIljuQMReMFS7stuPkA&oe=6259E711"
+ }
  ],
  "preview": [
   {

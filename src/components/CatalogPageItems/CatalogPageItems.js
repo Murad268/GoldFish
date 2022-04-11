@@ -3,10 +3,12 @@ import './catalogPageItems.css'
 import Services from '../../services/Services'
 import CatalogListItem from '../catalogListItem/CatalogListItem';
 import GoodItem from '../gooItem/GoodItem';
-const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, onFilter, filters, setFilters, availability, discount}) => {
+const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, onFilter, filters, setFilters, availability, discount, interval}) => {
    const res = new Services()
+   let array = []
    const [goods, setGoods] = useState([])
-   const filteredItems = discount(availability(onFilter(filterPost(goods, goodNem), filters), filters) , filters) 
+   const [offset, setOffset] = useState(9)
+   const filteredItems = interval(discount(availability(onFilter(filterPost(goods, goodNem), filters), filters) , filters), filters) 
    useEffect(() => {
       res.getRes("http://localhost:3000", "goods").then(res => {
           setGoods(res)
@@ -16,6 +18,7 @@ const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, o
     document.querySelector(".all_acategory").classList.toggle("listItem__active")
     e.target.classList.toggle("listBtn__active")
   }
+  console.log(window.location.hash)
    return (
       <div className='catalogPageItems'>
         <div className="container">
@@ -27,14 +30,10 @@ const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, o
                     <ul className="catalogPage__list">
                       {
                           lists.map(list => {
-                         
-                              return <CatalogListItem setActive={setActive} list={list} key={list.id}/>
-                            
-                            
+                              return <CatalogListItem setActive={setActive} list={list} key={list.id}/> 
                           })
                       }
                       <div onClick={listVisibility} className='listBtn'></div>
-
                     </ul>
                   </li>
                </ul>
@@ -48,8 +47,8 @@ const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, o
                      <label htmlFor="to">До</label>
                      <input value={filters.to}  onChange={(e) => setFilters(prev => ({...prev, to: e.target.value}))}  id='to' type="text" />
                      <div className="range">
-                        <input onChange={(e) => setFilters(prev => ({...prev, from: e.target.value}))} type="range" class="form-range" defaultValue= "0" min="0" max="30000" step="100" id="customRange3"/>
-                        <input onChange={(e) => setFilters(prev => ({...prev, to: e.target.value}))} type="range" class="form-range" defaultValue= "30000" min="0" max="30000" step="100" id="customRange3"/>
+                        <input onChange={(e) => setFilters(prev => ({...prev, from: e.target.value}))} type="range" className="form-range" defaultValue= "0" min="0" max="30000" step="100" id="customRange3"/>
+                        <input onChange={(e) => setFilters(prev => ({...prev, to: e.target.value}))} type="range" className="form-range" defaultValue= "30000" min="0" max="30000" step="100" id="customRange3"/>
                      </div>
                      <div>
                         <input onChange={() => setFilters(prev => ({...prev, discount: !prev.discount}))} type="checkbox"/>
@@ -105,32 +104,36 @@ const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, o
                         <span>под заказ</span>
                      </div>
                      <div>
-                       
                         <input onChange={(e) => setFilters(prev => ({...prev, availability: e.target.value}))} name='availability' value="notavailable" type="radio"/>
                         <span>нет в наличии</span>
                      </div>
-                    
-                  
-   
                      <button type='reset'>Сбросить фильтр</button>
                   </form>
               </div>
               <div className="goods">
                   <div className="goods__wrapper">
                         {
-                      
                            filteredItems.map(good => {
-                           if(!(good.price > filters.from && good.price  < filters.to) ) {
+                           if(!(good.price > filters.from ) ) {
                               return false
+                           } else {
+                              array.push(good)
+                              if(array.length > offset) {
+                                 return false 
+                              } 
+                               else {
+                                 if(array.length == filteredItems.length) {
+                                    document.querySelector(".good__load").style.display = "none"
+                                  }
+                                 return <GoodItem key={good.id} good={good}/>
+                              } 
                            }
-                           return <GoodItem key={good.id} good={good}/>
                          })
-                        
                      }
                   </div>
+                  <button onClick={() => setOffset(prev => prev + 9)} className="good__load">load more</button>
             </div>
             </div>
-           
         </div>
       </div>
    );

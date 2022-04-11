@@ -9,10 +9,9 @@ const CatalogPage = () => {
      year: "all",
      availability: "all",
      from: "0",
-     to: "30000",
+     to: "50000",
      discount: false
    })
-   console.log(filters.availability)
    const filterPost = (items, filter) => {
       switch(filter) {
         case "pary":
@@ -463,9 +462,15 @@ const CatalogPage = () => {
 
      }
    }
+   const interval = (items, filter) => {
+      switch(filter.from) {
+        case filter.from:
+          return items.filter(item => item.price > filter.from && item.price < filter.to)
+      }
+   }
    return (
       <>
-         <CatalogPageItems discount={discount} availability = {availability} setFilters={setFilters} filters={filters} onFilter={onFilter}  filterPost={filterPost} setGoodName={setGoodName}  goodNem={goodNem} lists={lists}/>
+         <CatalogPageItems interval = {interval} discount={discount} availability = {availability} setFilters={setFilters} filters={filters} onFilter={onFilter}  filterPost={filterPost} setGoodName={setGoodName}  goodNem={goodNem} lists={lists}/>
       </>
    );
 };

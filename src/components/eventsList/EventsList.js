@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './eventsList.css'
 import Services from '../../services/Services'
 import EventListItem from '../eventListItem/EventListItem';
+import { Link } from 'react-router-dom';
 const EventsList = () => {
    const [events, setEvents] = useState([])
    const [show, setShow] = useState(2)
@@ -25,7 +26,7 @@ const EventsList = () => {
                   })
                }
             </div>
-            <button onClick={() => setShow(prev => prev + 2)} className="event__load">Показать еще</button>
+            <Link to="/events" className="event__load">Показать еще</Link>
          </div>
       </div>
    );

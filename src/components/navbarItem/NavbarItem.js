@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './navbarItem.css'
-const NavbarItem = ({value}) => {
+const NavbarItem = ({value, to}) => {
    return (
       <li className='navbar__item'>
-         <a href="">{value}</a>
+         <Link to={`/${to}`}>{value}</Link>
       </li>
    );
 };
