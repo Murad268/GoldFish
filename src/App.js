@@ -8,6 +8,7 @@ import AbautUs from './pages/AbautUs';
 import EventsPage from './pages/EventsPage';
 import EventInfoPage from './pages/EventInfoPage';
 import ContactPage from './pages/ContactPage';
+import NewsPage from './pages/NewsPage';
 const App = () => {
   return (
     <Router>
@@ -22,6 +23,7 @@ const App = () => {
               <Route path='/events' element={<EventsPage/>}/>
               <Route path='/events/:eventId' element={<EventInfoPage/>}/>
               <Route path='/contacts' element={<ContactPage/>}/>
+              <Route path='/NewsPage/:newsId' element={<NewsPage/>}/>
             </Routes>
           </Suspense>
           <Footer/>

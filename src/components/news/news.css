@@ -4,6 +4,7 @@
 .news__wrapper {
    display: grid;
    grid-template-columns: repeat(3, 356px);
+   row-gap: 20px;
    width: 100%;
    justify-content: space-between;
 }

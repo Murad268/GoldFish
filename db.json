@@ -141,21 +141,38 @@
 "news": [
   {
     "id": 1,
-    "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/278009519_353125960089075_2075045753477982125_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=bPUm9fhZnNwAX8mxwFY&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT9X5PMQ0tlRMvR6z7MwOuXV8m46t-8pz3_4Np7EFmRmzw&oe=62518A21",
-    "tittle": "Аэронавтика Империалис: введение в игру",
-    "desc": "Детально ознакомимся с правилами игры"
+    "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/278363471_357483519653319_6927964860533791916_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=C-Edub-CbMYAX-0mWfS&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT89xfDohAlZC33TJo_HAp_avmbq7j3mfTx0ss55nw674g&oe=625A4B06",
+    "tittle": "Отправляйтесь в неизведанные галактики!",
+    "desc": "12 апреля по всему миру отмечается день авиации и космонавтики – дата, посвящённая первому полёту человека в космос. Юрий Алексеевич Гагарин совершил то, о чём человечество грезело многие и многие годы: стал ближе к звёздам. Присоединяйтесь к нам в праздновании этой замечательной даты! С 11 по 17 апреля получайте двойные бонусы при покупке настольных игр из космической подборки.",
+    "bigImg": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/278363494_357483552986649_8304164998581993528_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=cjNol83PF4YAX87jGCr&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT_vL6afQ03AqeRPuJeqnN9FICgHeI2fnbeixcsycWSIZg&oe=625AB25A"
   },
   {
     "id": 2,
     "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/277990325_353126010089070_9106779705707379583_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=I80d95YQLP4AX_0cI0E&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT_wiyLMH53kWKNkt2DE1sg_kzJ7MFEUobugID9sfugx5w&oe=62516A57",
-    "tittle": "Лучшие настолки в Steam для игры с друзьми на карантине",
-    "desc": "По рейтингу 2021"
+    "tittle": "Новый спецвыпуск 'Мира фантастики' – это целая библиотека!",
+    "desc": "Фантастику любят многие – фантастику научную, юмористическую, историческую, социальную, подростковую, разнообразное фэнтези, мистику и хоррор, альтернативную историю... Или, может, не против фантастику полюбить, но просто не знают пока, с чего начать знакомство с ней. Этот спецвыпуск журнала 'Мир фантастики' рассказывает о более чем сотне книг, которые нужно успеть прочесть за свою жизнь, – и это самые 'сливки' мировой фантастики.",
+    "bigImg": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/278076695_357483452986659_339710953130138195_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=CTGgUVnCn7AAX83Kugh&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT8NakyCL6d_zVkNABz2A_9jRS39JPiaxkjHYvj6Ej6Hmw&oe=625AB1F3"
   },
   {
     "id": 3,
     "img": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277998534_353125993422405_1080447751882864134_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=Qib8JUrVO2gAX9btzna&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT8r9c3RWwox1iECGCFfIW1cQknFWP234s1bNk-OAE36tA&oe=62515268",
-    "tittle": "Желанные, но маловероятные релизы ",
-    "desc": "Небольшой список «а вот бы...»"
+    "tittle": "Расколотая звезда собрана!",
+    "desc": "Семь фрагментов Расколотой звезды найдены, и для того чтобы отпраздновать это невероятное достижение, Искатели готовят грандиозный фестиваль на Мосту Ярости в Магнимаре. Кульминацией торжества станет объединение осколков в легендарный Саэдр, который будет восстановлен впервые за более чем 10000 лет. Но когда ритуал воссоздания артефакта завершится, древние чары оживут, мёртвое сердце Тассилона вновь забьётся, а весь Магнимар подвергнется ужасной опасности. Мощь Саэдра поможет героям противостоять этому восставшему злу – но хватит ли силы древнего артефакта, чтобы спасти всех? 18+",
+    "bigImg": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277817265_357483492986655_133815912317523921_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=nMusLg9jHb8AX8H318E&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT-00A1nayAcEuLJUl1Q3t1AJ_FfrPazD_wn5LFmUoBWxA&oe=6259B3BB"
+  },
+  {
+    "id": 4,
+    "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/278192372_357486479653023_3456928673137818462_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=MCNezD0zOJcAX-bs14K&_nc_oc=AQkSZbPOxGXbzLsG9mRkEvWGfZwaSk-yuCT08HGPjlIVxi2xGyVmWRCqn5DiwVn9sZo&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT_qfpDKxzsgOjLvaDARl4CGt1jNiKxrPMpHgqBF9UzVig&oe=625A93E6",
+    "tittle": "Пламя Хексенфаста ещё тлеет",
+    "desc": "Открываем старт предзаказов на новинки Games Workshop: набор Combat Patrol с готовой армией на 500 очков для Серых Рыцарей и двух персонажей, ранее доступных только в наборе Hexfire. Адский магистр и кастелян Кроу уже готовы пополнить ряды ваших армий Thousand Sons и Grey Knights!",
+    "bigImg": "https://scontent.fgyd4-2.fna.fbcdn.net/v/t39.30808-6/277817265_357483492986655_133815912317523921_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_ohc=nMusLg9jHb8AX8H318E&_nc_ht=scontent.fgyd4-2.fna&oh=00_AT-00A1nayAcEuLJUl1Q3t1AJ_FfrPazD_wn5LFmUoBWxA&oe=6259B3BB"
+  },
+  {
+    "id": 5,
+    "img": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/278123303_357486546319683_7501255031705378759_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=McDjCvQ_qYEAX8BkfMk&tn=AqNUpRZa1PBSLJOW&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT8dkujZq-k1_p1kiovZXoMeMO_zl-yzgak25DOPZj27SQ&oe=625AAED3",
+    "tittle": "Сработанные команды специалистов готовы к устранению проблем",
+    "desc": "Добрый день! Мы открываем сбор предзаказов на две команды для Kill Team, ранее доступные только в составе набора Chalnath: Послушниц (Novitiates) Адепта Сороритас и Следопытов (Pathfinders) Империи Т'ау. Следопыты предпочитают не вступать в прямой контакт и вести огонь на дистанции, а Послушницы напротив предпочитают сражаться врукопашную, используя зажигательные смеси и цепные мечи. Если вы хотели приобрести только один из этих отрядов – час пробил, оформляйте предзаказ!",
+    "bigImg": "https://scontent.fgyd4-3.fna.fbcdn.net/v/t39.30808-6/278121492_357486516319686_1566631335965643750_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=SN5qRo2DZDgAX9OSEng&_nc_ht=scontent.fgyd4-3.fna&oh=00_AT-v3KtLmCphLIY5J_mQFH3a-aj2Ez1lv7PrbbYXvvBjCQ&oe=625AD8B4"
   }
 ],
 "goods": [
