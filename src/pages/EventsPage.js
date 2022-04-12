@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import EventsListElementPage from '../components/EventsListElementPage/EventsListElementPage';
+import { Link } from 'react-router-dom';
 const EventsPage = () => {
 
    const [events, setEvents] = useState([])
@@ -17,8 +18,9 @@ const EventsPage = () => {
    const changeDate = (e) => {
       setDate(e)
    }
+
    const filter = (items, filter) => {
-      window.scrollTo(0, 0);
+     
       switch(filter) {
          case "all":
             return items
@@ -35,6 +37,7 @@ const EventsPage = () => {
       }
    }
    const onActivatedFilter = (id) => {
+         window.scrollTo(0, 0);
          setFilters(prev => {
            return prev.map(pre => {
                if(pre.id == id) {
@@ -49,9 +52,39 @@ const EventsPage = () => {
             })
          })
    }
+   
+   const onDate = (items, filter) => {
+      switch(filter.toLocaleDateString()) {
+         case  new Date("2023, 10, 31").toLocaleDateString():
+            return items.filter(item => item.time.split(" ")[0] == "31.10.2023")
+         case  new Date("2022, 07, 13").toLocaleDateString():
+            return items.filter(item => item.time.split(" ")[0] == "13.07.2022")
+         case  new Date("2025, 04, 15").toLocaleDateString():
+            return items.filter(item => item.time.split(" ")[0] == "15.04.2025")
+         case  new Date("2024, 12, 12").toLocaleDateString():
+            return items.filter(item => item.time.split(" ")[0] == "12.12.2024")
+         case  new Date("2022, 07, 08").toLocaleDateString():
+            return items.filter(item => item.time.split(" ")[0] == "208.07.2022")
+         case  new Date("2021, 12, 09").toLocaleDateString():
+            return items.filter(item => item.time.split(" ")[0] == "09.12.2021")
+         case  new Date("2021, 12, 10").toLocaleDateString():
+            return items.filter(item => item.time.split(" ")[0] == "10.12.2021")
+         case  new Date("2022, 10, 31").toLocaleDateString():
+            return items.filter(item => item.time.split(" ")[0] == "31.10.2022")
+         case  new Date("2021, 10, 12").toLocaleDateString():
+            return items.filter(item => item.time.split(" ")[0] == "12.10.2021")
+         default:
+            return items
+      }
+   }
    return (
       <>
-         <EventsListElementPage onActivatedFilter={onActivatedFilter} filtered={filtered} filter={filter} date={date} changeDate={changeDate} setEvents={setEvents} filters={filters} events={events}/>  
+          <div style={{marginTop: "29px"}} className='container'>
+                  <Link to="/"  style={{color:"black", textDecoration: "none", padding: "0 10px 0 0", fontWeight: 900}}>Главная</Link> 
+                  {">"}    
+                  <span style={{padding: "0 10px 0 10px", fontWeight: 300}}>Мероприятия</span>
+           </div>
+         <EventsListElementPage onDate = {onDate}  onActivatedFilter={onActivatedFilter} filtered={filtered} filter={filter} date={date} setDate={setDate} setEvents={setEvents} filters={filters} events={events}/>  
       </>
    );
 };

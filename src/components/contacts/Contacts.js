@@ -7,7 +7,7 @@ import email from '../../images/contacts/email.png'
 import time from '../../images/contacts/time.png'
 const Contacts = () => {
    return (
-      <div className='contacts'>
+      <div id='contacts' className='contacts'>
         <div className="container">
            <h3 className="contacts__tittle">Контакты</h3>
            <div className="contact__wrapper">

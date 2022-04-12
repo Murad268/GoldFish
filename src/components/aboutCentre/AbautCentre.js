@@ -8,7 +8,7 @@ const AbautCentre = () => {
    return (
       <div className='abaoutCentre'>
          <div className="container">
-         <h5 className="abaoutCentre__tittle">О центре</h5>
+         <h5 className="aboutCentre__tittle">О центре</h5>
          <div className="abaoutCentre__wrapper">        
             <div>
                <div>

@@ -17,13 +17,14 @@
  }
 
  .eventListItem__footer {
-    padding: 22px 32px 22px 22px;
+   padding: 22px 32px 22px 22px;
    position: absolute;
    bottom: 0;
    left: 0;
    background: #2A2A2A;
    opacity: 0.79;
    border-radius: 0px 0px 9px 9px;
+ 
  }
    .event_name_time {
       display: flex;
@@ -36,7 +37,7 @@
    font-style: normal;
    font-weight: 700;
    font-size: 19px;
-   line-height: 22px;
+   line-height: 45px;
    color: #F9A43F;
  }
 

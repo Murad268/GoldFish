@@ -6,6 +6,8 @@ import Footer from './components/footer/Footer'
 import CatalogPage from './pages/CatalogPage';
 import AbautUs from './pages/AbautUs';
 import EventsPage from './pages/EventsPage';
+import EventInfoPage from './pages/EventInfoPage';
+import ContactPage from './pages/ContactPage';
 const App = () => {
   return (
     <Router>
@@ -18,6 +20,8 @@ const App = () => {
               <Route path='/about' element={<AbautUs/>}/>
               <Route path='/:forIt' element={<CatalogPage/>}/>
               <Route path='/events' element={<EventsPage/>}/>
+              <Route path='/events/:eventId' element={<EventInfoPage/>}/>
+              <Route path='/contacts' element={<ContactPage/>}/>
             </Routes>
           </Suspense>
           <Footer/>

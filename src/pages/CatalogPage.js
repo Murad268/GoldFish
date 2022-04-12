@@ -1,10 +1,13 @@
 import React, {useState} from 'react';
 import CatalogPageItems from '../components/CatalogPageItems/CatalogPageItems';
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const CatalogPage = () => {
   const {forIt} =  useParams()
   
    const [goodNem = "all", setGoodName] = useState(forIt)
+   const [mainLink, setMainLink] = useState("")
+   const [subLink, setSublink] = useState("")
    const [filters, setFilters] = useState({
      year: "all",
      availability: "all",
@@ -13,118 +16,221 @@ const CatalogPage = () => {
      discount: false
    })
    const filterPost = (items, filter) => {
+     if(filter == "pary") {
+       
+     }
       switch(filter) {
         case "pary":
-          return items.filter(item => item.for == "pary");
+          setMainLink("Настольные игры")
+          setSublink("Вечериночные игры")
+          return items.filter(item => item.for == "pary")
         case "dedective":
+          setMainLink("Настольные игры")
+          setSublink("Детективные игры")
           return items.filter(item => item.for == "dedective");
         case "child":
+          setMainLink("Настольные игры")
+          setSublink("Детские игры")
           return items.filter(item => item.for == "child");
         case "duel":
+          setMainLink("Настольные игры")
+          setSublink("Дуэльные игры")
           return items.filter(item => item.for == "duel");
         case "cards":
+          setMainLink("Настольные игры")
+          setSublink("Карточные игры")
           return items.filter(item => item.for == "cards");
-        case "dedective":
-          return items.filter(item => item.for == "dedective");
         case "classic":
+          setMainLink("Настольные игры")
+          setSublink("Классические игры")
           return items.filter(item => item.for == "classic");
         case "book":
+          setMainLink("Настольные игры")
+          setSublink("Книги-игры")
           return items.filter(item => item.for == "book");
           case "coop":
+          setMainLink("Настольные игры")
+          setSublink("Кооперативные игры")
           return items.filter(item => item.for == "coop");
         case "kit":
+          setMainLink("Настольные игры")
+          setSublink("Наборы игр")
           return items.filter(item => item.for == "kit");
         case "adventure":
+          setMainLink("Настольные игры")
+          setSublink("Приключенческие игры")
           return items.filter(item => item.for == "adventure");
         case "family":
-          return items.filter(item => item.for == "family");
-        case "adventure":
-          return items.filter(item => item.for == "adventure");
-        case "family":
+          setMainLink("Настольные игры")
+          setSublink("Семейные игры")
           return items.filter(item => item.for == "family");
         case "strategy":
+          setMainLink("Настольные игры")
+          setSublink("Стратегические игры")
           return items.filter(item => item.for == "strategy");
         case "hardcore":
+          setMainLink("Настольные игры")
+          setSublink("Хардкорные игры")
           return items.filter(item => item.for == "hardcore");
         case "economic":
+          setMainLink("Настольные игры")
+          setSublink("Экономические игры")
           return items.filter(item => item.for == "economic");
         case "alternative":
+          setMainLink("Warhammer 40000")
+          setSublink("Альтернативные миниатюры")
           return items.filter(item => item.for == "alternative");
         case "war":
+          setMainLink("Warhammer 40000")
+          setSublink("Warhammer")
           return items.filter(item => item.for == "war");
         case "ageSg":
+          setMainLink("Warhammer 40000")
+          setSublink("Age of Sigmar")
           return items.filter(item => item.for == "ageSg");
         case "warcry":
+          setMainLink("Warhammer 40000")
+          setSublink("Warcry")
           return items.filter(item => item.for == "warcry");
         case "nercomunda":
+          setMainLink("Warhammer 40000")
+          setSublink("Nercomunda")
           return items.filter(item => item.for == "nercomunda");
         case "lor":
+          setMainLink("Warhammer 40000")
+          setSublink("Lord of the Rings")
           return items.filter(item => item.for == "lor");
         case "blood":
+          setMainLink("Warhammer 40000")
+          setSublink("Blood Bowl")
           return items.filter(item => item.for == "blood");
         case "titanicus":
+          setMainLink("Warhammer 40000")
+          setSublink("Titanicus")
           return items.filter(item => item.for == "titanicus");
         case "killtem":
+          setMainLink("Warhammer 40000")
+          setSublink("Killtem")
           return items.filter(item => item.for == "killtem");
         case "midnightHunt":
+          setMainLink("Magic: the Gathering")
+          setSublink("Иннистрад: Полночна Охота")
           return items.filter(item => item.for == "midnightHunt");
         case "adventuresInTheForgottenRealms":
+          setMainLink("Magic: the Gathering")
+          setSublink("Приключения в Забытых Королевствах")
           return items.filter(item => item.for == "adventuresInTheForgottenRealms");
         case "crimsonOath":
+          setMainLink("Magic: the Gathering")
+          setSublink("Иннистрад: Багровая Клятва")
           return items.filter(item => item.for == "crimsonOath");
         case "choiceOfRavnica":
+          setMainLink("Magic: the Gathering")
+          setSublink("Выбор Равники")
           return items.filter(item => item.for == "choiceOfRavnica");
         case "guildsOfRavnica":
+          setMainLink("Magic: the Gathering")
+          setSublink("Гильдии Равники")
           return items.filter(item => item.for == "guildsOfRavnica");
         case "warOfTheSpark":
+          setMainLink("Magic: the Gathering")
+          setSublink("Война искры")
           return items.filter(item => item.for == "warOfTheSpark");
         case "coreSet2021":
+          setMainLink("Magic: the Gathering")
+          setSublink("Базовый выпуск 2021")
           return items.filter(item => item.for == "coreSet2021");
         case "throneOfEldraine":
+          setMainLink("Magic: the Gathering")
+          setSublink("Престол Элдраина")
           return items.filter(item => item.for == "throneOfEldraine")
         case "beyondTheThresholdOfDeath":
+          setMainLink("Magic: the Gathering")
+          setSublink("Терос: За Порогом Смерти")
           return items.filter(item => item.for == "beyondTheThresholdOfDeath");
         case "lairOfTheGiants":
+          setMainLink("Magic: the Gathering")
+          setSublink("Икория. Логово исполинов")
           return items.filter(item => item.for == "lairOfTheGiants");
         case "protectors":
+          setMainLink("Аксессуры для игр")
+          setSublink("Протекторы")
           return items.filter(item => item.for == "protectors");
         case "albums":
+          setMainLink("Аксессуры для игр")
+          setSublink("Альбомы")
           return items.filter(item => item.for == "albums")
         case "boxes":
+          setMainLink("Аксессуры для игр")
+          setSublink("Коробочки")
           return items.filter(item => item.for == "boxes");
         case "cubes":
+          setMainLink("Аксессуры для игр")
+          setSublink("Кубики")
           return items.filter(item => item.for == "cubes");
         case "rugs":
+          setMainLink("Аксессуры для игр")
+          setSublink("Коврики")
           return items.filter(item => item.for == "rugs");
         case "pouches":
+          setMainLink("Аксессуры для игр")
+          setSublink("Мешочки")
           return items.filter(item => item.for == "pouches")
         case "case":
+          setMainLink("Аксессуры для игр")
+          setSublink("Case")
           return items.filter(item => item.for == "case");
         case "colors":
+          setMainLink("Краски")
+          setSublink("Citadel")
           return items.filter(item => item.for == "colors");
         case "bosny":
+          setMainLink("Краски")
+          setSublink("Bosny")
           return items.filter(item => item.for == "bosny");
         case "vallejo":
+          setMainLink("Краски")
+          setSublink("Vallejo")
           return items.filter(item => item.for == "pouches")
         case "brushes":
+          setMainLink("Аксессуары для моделизма")
+          setSublink("Кисти")
           return items.filter(item => item.for == "brushes");
         case "instruments":
+          setMainLink("Аксессуары для моделизма")
+          setSublink("Инструменты")
           return items.filter(item => item.for == "instruments");
         case "decorations":
+          setMainLink("Аксессуары для моделизма")
+          setSublink("Декорации")
           return items.filter(item => item.for == "decorations");
         case "coasters":
+          setMainLink("Аксессуары для моделизма")
+          setSublink("Подставки")
           return items.filter(item => item.for == "coasters")
         case "board":
+          setMainLink("Настольные игры")
+          setSublink("")
           return items.filter(item => item.allFor == "board")
         case "magic":
+          setMainLink("Magic: the Gathering")
+          setSublink("")
           return items.filter(item => item.allFor == "magic")
         case "warhammer":
+          setMainLink("Warhammer 40000")
+          setSublink("")
           return items.filter(item => item.allFor == "warhammer")
         case "color":
+          setMainLink("Краски")
+          setSublink("")
           return items.filter(item => item.allFor == "color")
         case "acc":
+          setMainLink("Аксессуры для игр")
+          setSublink("")
           return items.filter(item => item.allFor == "acc")
         case "model":
+          setMainLink("Аксессуары для моделизма")
+          setSublink("")
           return items.filter(item => item.allFor == "model")
         case "all":
           return items.filter(item => item.name)
@@ -469,7 +575,26 @@ const CatalogPage = () => {
       }
    }
    return (
-      <>
+      <>                          
+         <div style={{marginTop: "29px", marginBottom: "9px"}} className='container'>
+         <Link to="/"  style={{color:"black", textDecoration: "none", padding: "0 10px 0 0", fontWeight: 900}}>Главная</Link>    
+           {
+             mainLink?
+             ">"
+             :null
+           }
+           <span onClick={() => {
+             setGoodName("board")
+             setSublink("")
+           }} style={{cursor: "pointer", padding: "0 10px 0 10px", fontWeight: 600}}>{mainLink} </span>
+           {
+             subLink?
+             ">"
+             :null
+           }
+           <span style={{padding: "0 0 0 10px", fontWeight: 300 }}>{subLink}</span>
+           
+           </div>
          <CatalogPageItems interval = {interval} discount={discount} availability = {availability} setFilters={setFilters} filters={filters} onFilter={onFilter}  filterPost={filterPost} setGoodName={setGoodName}  goodNem={goodNem} lists={lists}/>
       </>
    );
