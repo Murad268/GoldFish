@@ -1,0 +1,16 @@
+.imgbox {
+   width: 574px;
+   height: 397px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.imgbox img {
+   width: 30px;
+   height: 30px;
+   object-fit: fill;
+   width: 367px;
+   height: 380px;
+   display: block;
+   object-fit: contain;
+}

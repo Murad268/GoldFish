@@ -1,0 +1,21 @@
+.goodAnswers {
+   margin-top: 90px;
+}
+.good__tabs {
+   display: flex;
+   justify-content: space-between;
+}
+.good__tab {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 26px;
+   color: #2A2A2A;
+   cursor: pointer;
+   transition: all 0.1s;
+  
+}
+.good__tab__active {
+   border-bottom: 3px solid #2A2A2A;
+}

@@ -1,0 +1,82 @@
+.goodInfoPage {
+   padding: 32px 0 44px 0;
+}
+.goodInfoPage__wrapper {
+   display: grid;
+   column-gap: 50px;
+   grid-template-columns: 65% 35%;
+}
+.goodInfoPage__window {
+   width: 574px;
+   height: 397px;
+   background: #FFFFFF;
+   border: 1px solid rgba(217, 217, 217, 0.39);
+   box-sizing: border-box;
+   border-radius: 9px;
+   overflow: hidden;
+}
+.goodInfoPage__inner {
+   display: flex;
+   width: max-content;
+   transition: 0.5s all;
+
+}
+.slide__good__wrapper {
+   position: relative;
+}
+.slide__good__wrapper .right {
+   display: block;
+   position: absolute;
+   top: 50%;
+   right: -30px;
+   transform: translateY(-50%);
+   cursor: pointer;
+}
+.slide__good__wrapper .left {
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 110px;
+   transform: translateY(-50%);
+   cursor: pointer;
+}
+.goodPreview__wrapper {
+   width: 75px;
+   height: 291px;
+   overflow: hidden;
+   margin-right: 45px;
+}
+.goodPreview__inner {
+   width: max-content;
+   transition: all 0.3s;
+}
+.goodInfoSlider {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.up {
+   position: absolute;
+   top: 12px;
+   left: 25px;
+   display: block;
+   cursor: pointer;
+   z-index: 10;
+}
+.down {
+   position: absolute;
+   bottom: 12px;
+   left: 25px;
+   display: block;
+   cursor: pointer;
+   z-index: 10;
+}
+.good__buy__box {
+   background: #FFFFFF;
+   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+   border-radius: 9px;
+   padding: 21px 34px 43px 33px;
+}
+.good__buy__box hr {
+   margin: 44px 0 21px 0;
+}

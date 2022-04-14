@@ -1,0 +1,16 @@
+.characteristics {
+   margin-top: 33px;
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #000000;
+}
+.characteristics ul li {
+   margin-top: 5px;
+}
+.characteristics ul li span {
+   color: red;
+   font-weight: 900;
+}

@@ -1,0 +1,102 @@
+.good__buy {
+   width: 348px;
+   padding: 23px 32px 32px 23px;
+}
+.good__code {
+   text-align: right;
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 14px;
+   color: #2A2A2A;
+   opacity: 0.74;
+}
+.good__buy__info {
+   display: grid;
+   grid-template-columns: repeat(3, 70px);
+   column-gap: 40px;
+   margin: 0 auto;
+   width: max-content;
+}
+.good__buy__info>div>img {
+   display: block;
+}
+.good__buy__info>div {
+   display: flex;
+   justify-content: space-between;
+   align-items: center
+}
+.good__buy__info>div>div {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 19px;
+   color: #2A2A2A;
+}
+.good__buy__prices {
+   margin: 0 auto;
+   text-align: center;
+}
+.good__buy__price {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 45px;
+   line-height: 52px;
+   color: #2A2A2A;
+   margin: 26px 0 34px 0;
+}
+.good__buy .bag, .buy {
+   width: 281px;
+   height: 49px;
+}  
+.good__faq {
+   margin: 13px 0 20px 0;
+}
+.good__faq__tittles {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 6px;
+}
+.good__faq__tittles img{
+   display: block;
+   object-fit: fill;
+   cursor: pointer;
+}
+.good__faq__tittle {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 19px;
+   line-height: 22px;
+   color: #2A2A2A;
+}
+
+.my__answer {
+   width: 281px;
+   height: 50px;
+   border: 1px solid rgba(42, 42, 42, 0.19);
+   box-sizing: border-box;
+   border-radius: 9px;
+   padding: 13px 0 14px 71px;
+   display: block;
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 23px;
+   color: #2A2A2A;
+   opacity: 0.74;
+   margin: 30px auto 0 auto;
+}
+.good__faq__desc {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #2A2A2A;
+}

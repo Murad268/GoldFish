@@ -1,0 +1,14 @@
+.answerQuestion {
+   margin-top: 33px;
+}
+.answerQuestion h5, h4, h3 {
+   font-weight: 900;
+}
+.answerQuestion p {
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #000000;
+}
