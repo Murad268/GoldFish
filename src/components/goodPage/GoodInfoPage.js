@@ -88,7 +88,7 @@ const GoodInfoPage = () => {
    }
 
    useState(() => {
-      res.getRes("http://localhost:3000", "goods/1").then(res => setGoods(res))
+      res.getRes("http://localhost:3000", "goods/31").then(res => setGoods(res))
    }, [])
 
    return (
