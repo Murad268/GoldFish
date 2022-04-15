@@ -25,7 +25,7 @@ const App = () => {
               <Route path='/events/:eventId' element={<EventInfoPage/>}/>
               <Route path='/contacts' element={<ContactPage/>}/>
               <Route path='/NewsPage/:newsId' element={<NewsPage/>}/>
-              <Route path='/goodPage' element={<GoodPage/>}/>
+              <Route path='/catalog/:goodId' element={<GoodPage/>}/>
             </Routes>
           </Suspense>
           <Footer/>

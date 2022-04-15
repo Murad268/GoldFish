@@ -42,8 +42,8 @@ const GoodInfoPageBuy = ({good}) => {
          
             <div className="good__buy__price">{good.price} ₽</div>
          </div>
-         <button className="bag">В корзину</button>
-         <button className="buy">Купить в 1 клик</button>
+         <button className="b_bag">В корзину</button>
+         <button className="b_buy">Купить в 1 клик</button>
          <hr />
       
       <Accordion>

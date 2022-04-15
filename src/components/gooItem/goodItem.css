@@ -83,7 +83,7 @@
 .old__god__price:hover .secret {
    display: block;
 }
-.bag {
+.r_bag {
    background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
    border-radius: 9px;
    width: 163px;
@@ -99,7 +99,7 @@
    margin: 0 auto 12px auto;
 }
 
-.buy {
+.r_buy {
    border: 2px solid #F9A43F;
    box-sizing: border-box;
    border-radius: 9px;
@@ -109,7 +109,13 @@
    display: block;
    margin: 0 auto;
 }
-
+.r_buy_link {
+   text-decoration: none;
+   color: black
+}
+.r_buy_link:hover {
+   color: black
+}
 .good__prices {
    display: flex;
    margin: 0 auto;

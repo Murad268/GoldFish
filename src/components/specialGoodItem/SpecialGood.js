@@ -2,6 +2,7 @@ import React from 'react';
 import humans from '../../images/goods/audience 1.png'
 import time from '../../images/goods/Vector.png'
 import './specialGood.css'
+import { Link } from 'react-router-dom';
 const SpecialItem = ({good}) => {
    return (
       <div className='good__item'>
@@ -46,8 +47,10 @@ const SpecialItem = ({good}) => {
             </div>
          </div>
          <div className="btns">
-         <button className="bag">В корзину</button>
-         <button className="buy">Купить в 1 клик</button>
+         <button className="r_bag">В корзину</button>
+         <button className="r_buy">
+            <Link className='r_buy_link' to={`/catalog/${good.id}`}>Купить в 1 клик</Link>
+         </button>
          </div>
 
       </div>

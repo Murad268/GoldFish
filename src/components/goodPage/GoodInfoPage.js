@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { useParams, Link } from 'react-router-dom';
 import Services from '../../services/Services'
 import GoodSliderImg from '../goodSliderImg/GoodSliderImg';
 import GoodPreview from '../goodPreview/GoodPreview';
@@ -9,7 +10,10 @@ import left from '../../images/slider/left.png'
 import up from '../../images/slider/up.png'
 import down from '../../images/slider/down.png'
 import GoodInfoPageBuy from '../goodInfoPageBuy/GoodInfoPageBuy';
+
 const GoodInfoPage = () => {
+   const {goodId} = useParams()
+
    const res = new Services()
    const [goods, setGoods] = useState([])
    const [slider, setSlider] = useState({
@@ -88,7 +92,7 @@ const GoodInfoPage = () => {
    }
 
    useState(() => {
-      res.getRes("http://localhost:3000", "goods/31").then(res => setGoods(res))
+      res.getRes("http://localhost:3000", `goods/${goodId}`).then(res => setGoods(res))
    }, [])
 
    return (

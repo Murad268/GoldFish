@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Description from '../description/Description';
-import Rules from '../rules/Rules';
 import Characteristics from '../characteristics/Characteristics';
 import AnswerQuestion from '../answer-question/AnswerQuestion';
 import './goodAnswers.css'
@@ -10,8 +9,7 @@ const GoodAnswers = ({good}) => {
       [
          {id: 1, value: "Описание", active: true, filter: "description"},
          {id: 2, value: "Характеристики", active: false, filter: "characteristics"},
-         {id: 3, value: "Правила", active: false, filter: "rules"},
-         {id: 4, value: "Вопрос-ответ", active: false, filter: "question-answer"}
+         {id: 3, value: "Вопрос-ответ", active: false, filter: "question-answer"}
       ])
    const [viesTab, setViewTab] = useState("description")
       const activateTab = (id, value) => {
@@ -46,9 +44,6 @@ const GoodAnswers = ({good}) => {
             :
             viesTab == "characteristics"?
             <Characteristics good={good}/>
-            :
-            viesTab == "rules"?
-            <Rules/>
             :<AnswerQuestion good={good}/>
          }
                

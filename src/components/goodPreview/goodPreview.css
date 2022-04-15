@@ -19,7 +19,7 @@
 }
 .active__prew {
    background: #FFFFFF;
-   border: 1px solid #C4C4C4;
+   border: 1px solid red;
    box-sizing: border-box;
    border-radius: 9px;
 }

@@ -48,10 +48,31 @@
    color: #2A2A2A;
    margin: 26px 0 34px 0;
 }
-.good__buy .bag, .buy {
+.b_bag, .b_buy {
    width: 281px;
    height: 49px;
 }  
+.b_bag {
+   background: linear-gradient(184.53deg, #F9A43F 5.27%, #FB791B 91.78%);
+   border-radius: 9px;
+   font-family: 'Trebuchet MS';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   color: #FFFFFF;
+   border: none;
+   display: block;
+   margin: 0 auto 12px auto;
+}
+.b_buy {
+   border: 2px solid #F9A43F;
+   box-sizing: border-box;
+   border-radius: 9px;
+   background: inherit;
+   display: block;
+   margin: 0 auto;
+}
 .good__faq {
    margin: 13px 0 20px 0;
 }
