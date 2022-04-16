@@ -4,12 +4,14 @@ import EventListItem from '../eventListItem/EventListItem';
 import Services from '../../services/Services'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
+import { db } from '../../db';
 const EventsListElementPage = ({setEvents, events, setDate, date, filters, filter, filtered, onActivatedFilter, onDate}) => {
    const res = new Services()
 
 
    useEffect(() => {
-      res.getRes("http://localhost:3000", "events").then(res => setEvents(res))
+      // res.getRes("http://localhost:3000", "events").then(res => setEvents(res))
+      setEvents(db.events)
    }, [])
    const filteredEvents = onDate(filter(events, filtered), date)
   

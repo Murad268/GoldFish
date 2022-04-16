@@ -2,13 +2,15 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import Services from '../../services/Services'
 import CatalogItem from '../catalogItem/CatalogItem';
+import { db } from '../../db';
 import './catalog.css'
 const Catalog = () => {
    const [cats, setCat] = useState([])
  
    const res = new Services()
    useEffect(() => {
-      res.getRes("http://localhost:3000", "preview").then(res => setCat(res))
+      // res.getRes("http://localhost:3000", "preview").then(res => setCat(res))
+      setCat(db.preview)
    }, [])
    return (
       <div className='catalog'>

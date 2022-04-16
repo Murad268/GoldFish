@@ -3,14 +3,18 @@ import './catalogPageItems.css'
 import Services from '../../services/Services'
 import CatalogListItem from '../catalogListItem/CatalogListItem';
 import GoodItem from '../gooItem/GoodItem';
+import { db } from '../../db';
 const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, onFilter, filters, setFilters, availability, discount, interval}) => {
+
+   console.log(db)
    const res = new Services()
    const [goods, setGoods] = useState([])
    const filteredItems = interval(discount(availability(onFilter(filterPost(goods, goodNem), filters), filters) , filters), filters) 
    useEffect(() => {
-      res.getRes("http://localhost:3000", "goods").then(res => {
-          setGoods(res)
-      })
+      // res.getRes("http://localhost:3000", "goods").then(res => {
+      //     setGoods(res)
+      // })
+      setGoods(db.goods)
    },[goodNem])
    const listVisibility = (e) => {
     document.querySelector(".all_acategory").classList.toggle("listItem__active")
@@ -90,11 +94,11 @@ const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, o
                      </div>
                      <div>
                         <input onChange={(e) => setFilters(prev => ({...prev, availability: e.target.value}))} name='availability' value="all" type="radio"/>
-                        <spanp>все товары</spanp>
+                        <span>все товары</span>
                      </div>
                      <div>
                         <input onChange={(e) => setFilters(prev => ({...prev, availability: e.target.value}))} name='availability' value="instock" type="radio"/>
-                        <spanp>в наличии</spanp>
+                        <span>в наличии</span>
                      </div>
                      <div>
                         <input onChange={(e) => setFilters(prev => ({...prev, availability: e.target.value}))} name='availability' value="onorder" type="radio"/>

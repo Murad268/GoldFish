@@ -33,7 +33,7 @@ const GoodAnswers = ({good}) => {
             {
                tabs.map(tab => {
                   let className = tab.active?"good__tab good__tab__active":"good__tab"
-                  return <div onClick={()=>activateTab(tab.id, tab.filter)}  className={className}>{tab.value}</div>
+                  return <div onClick={()=>activateTab(tab.id, tab.filter)} key = {tab.id}  className={className}>{tab.value}</div>
                })
                }
         </div>

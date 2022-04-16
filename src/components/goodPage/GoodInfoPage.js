@@ -10,6 +10,7 @@ import left from '../../images/slider/left.png'
 import up from '../../images/slider/up.png'
 import down from '../../images/slider/down.png'
 import GoodInfoPageBuy from '../goodInfoPageBuy/GoodInfoPageBuy';
+import { db } from '../../db';
 
 const GoodInfoPage = () => {
    const {goodId} = useParams()
@@ -37,7 +38,7 @@ const GoodInfoPage = () => {
       })
    }
    const dots = (e, id) => {
-      setActive(prev => ({...prev, slide: id}))
+      setActive(prev => ({...prev, slide: id, prev: id-1}))
       cleanActive()
       e.target.parentNode.classList.add("active__prew")
       setSlider(prev => ( {...prev, offset: (id-1) * prev.transform}))
@@ -92,7 +93,8 @@ const GoodInfoPage = () => {
    }
 
    useState(() => {
-      res.getRes("http://localhost:3000", `goods/${goodId}`).then(res => setGoods(res))
+      // res.getRes("http://localhost:3000", `goods/${goodId}`).then(res => setGoods(res))
+      setGoods(db.goods[goodId])
    }, [])
 
    return (

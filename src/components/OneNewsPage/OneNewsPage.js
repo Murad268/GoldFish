@@ -3,6 +3,7 @@ import Services from '../../services/Services';
 import SpecialItem from '../specialGoodItem/SpecialGood';
 import { useParams, Link } from 'react-router-dom';
 import './oneNewsPage.css'
+import { db } from '../../db';
 const OneNewsPage = () => {
    const {newsId} = useParams()
    const res = new Services()
@@ -12,8 +13,10 @@ const OneNewsPage = () => {
    let end = start + 5
   
    useEffect(() => {
-      res.getRes("http://localhost:3000", `news/${newsId}`).then(res => setNews(res))
-      res.getRes("http://localhost:3000", "goods").then(res => setSpecials(res))
+      // res.getRes("http://localhost:3000", `news/${newsId}`).then(res => setNews(res))
+      // res.getRes("http://localhost:3000", "goods").then(res => setSpecials(res))
+      setNews(db.news[newsId])
+      setSpecials(db.goods)
    }, [])
    console.log(news)
    return (

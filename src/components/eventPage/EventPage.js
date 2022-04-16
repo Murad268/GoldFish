@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Services from '../../services/Services'
 import EventRegModal from '../eventRegModal/EventRegModal';
+import { db } from '../../db';
 import './eventPage.css'
 const EventPage = () => {
    const res = new Services()
@@ -23,7 +24,8 @@ const EventPage = () => {
    }
    const {eventId} = useParams()
    useEffect(() => {
-      res.getRes("http://localhost:3000", `events/${eventId}`).then(res => setEvent(res))
+      // res.getRes("http://localhost:3000", `events/${eventId}`).then(res => setEvent(res))
+      setEvent(db.events[eventId])
    }, [])
    return (
       <div className='eventPage'>

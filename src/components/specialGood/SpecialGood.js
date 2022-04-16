@@ -4,12 +4,14 @@ import Services from '../../services/Services'
 import './specialGood.css'
 import right from '../../images/goods/slider/Vector.png'
 import left from '../../images/goods/slider/Vector (1).png'
+import { db } from '../../db';
 const SpecialGood = () => {
    const res = new Services()
    const [goods, setGoods] = useState([])
    const [offset, setOffset] = useState(0)
    useEffect(() => {
       res.getRes("http://localhost:3000","goods").then(res => setGoods(res.filter(res => res.discount)))
+      setGoods(db.goods.filter(res => res.discount))
    }, [])
    const nextSlide = (e) => {
       const width = document.querySelector(".good__item").clientWidth

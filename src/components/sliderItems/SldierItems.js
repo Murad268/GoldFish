@@ -4,12 +4,14 @@ import SliderItem from '../sliderItem/SliderItem';
 import Services from '../../services/Services'
 import right from '../../images/slider/Vector.png'
 import left from '../../images/slider/VectorLeft.png'
+import { db } from '../../db';
 const SldierItems = () => {
    const [sliders, setSliders] = useState([])
    let [offset, setOffset] = useState(0)
    const res = new Services()
    useEffect(() => {
-      res.getRes("http://localhost:3000", "catagories").then(res=>setSliders(res))
+      // res.getRes("http://localhost:3000", "catagories").then(res=>setSliders(res))
+      setSliders(db.catagories)
    }, [])
    
    const nextSlide = (e) => {

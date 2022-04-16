@@ -52,19 +52,19 @@ const GoodInfoPageBuy = ({good}) => {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography >
+         
              <h5 className="good__faq__tittle">Доставка</h5>
-          </Typography>
+  
         </AccordionSummary>
         <AccordionDetails>
-          <Typography >
-             <div className='good__faq__desc'>
-               <p>Самовывоз из магазина: сегодня</p>
-               <p>Самовывоз из 761 пункта: 1-3 дня</p>
-               <p>Курьерская доставка: 1-3 дня</p>
-               <p>Доставка почтой: от 3 дней</p>
-             </div>
-          </Typography>
+      
+          <ul className='good__faq__desc'>
+               <li>Самовывоз из магазина: сегодня</li>
+               <li>Самовывоз из 761 пункта: 1-3 дня</li>
+               <li>Курьерская доставка: 1-3 дня</li>
+               <li>Доставка почтой: от 3 дней</li>
+             </ul>
+       
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -73,19 +73,19 @@ const GoodInfoPageBuy = ({good}) => {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography >
+         
              <h5 className="good__faq__tittle">Оплата</h5>
-          </Typography>
+         
         </AccordionSummary>
         <AccordionDetails>
-          <Typography className='good__faq__desc'>
-            <div className='good__faq__desc'>
-               <p>Самовывоз из магазина: сегодня</p>
-               <p>Самовывоз из 761 пункта: 1-3 дня</p>
-               <p>Курьерская доставка: 1-3 дня</p>
-               <p>Доставка почтой: от 3 дней</p>
-             </div>
-          </Typography>
+       
+            <ul className='good__faq__desc'>
+               <li>Самовывоз из магазина: сегодня</li>
+               <li>Самовывоз из 761 пункта: 1-3 дня</li>
+               <li>Курьерская доставка: 1-3 дня</li>
+               <li>Доставка почтой: от 3 дней</li>
+             </ul>
+        
         </AccordionDetails>
       </Accordion>
 
