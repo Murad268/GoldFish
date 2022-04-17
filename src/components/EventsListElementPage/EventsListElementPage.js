@@ -40,8 +40,9 @@ const EventsListElementPage = ({setEvents, events, setDate, date, filters, filte
                <div className="event__filter">
                   <div className="calendar__box">
                      <Calendar onChange={(e) => setDate(e)} value={date} className="calendar" />
+                     <button className='nullDate' onClick={() => setDate(new Date(new Date()))}>Обнулить дату</button>
                   </div>
-                  <button className='nullDate' onClick={() => setDate(new Date(new Date()))}>Обнулить дату</button>
+                  
                   <div className="event__filter__box">
                      <h5>Тематика</h5>
                      <form>

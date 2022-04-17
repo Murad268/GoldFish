@@ -16,10 +16,58 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 .abaut__desc {
    width: 50%;
    text-align: justify;
- 
+}
+
+@media(max-width: 1200px) {
+   .abaut__desc {
+      font-size: 14px;
+   }
+}
+@media(max-width: 991px) {
+   .about__desc__tittle {
+      font-size: 18px;
+   }
+   .abaut__desc {
+      font-size: 12px;
+   }
+   .abaout__img {
+      height: 350px;
+   }
+}
+
+@media(max-width: 768px) {
+   .abaut__desc {
+      width: 600px;
+   }
+   .abaout__img {
+      width: 600px;
+      margin-top: 30px;
+   }
+}
+
+@media(max-width: 579px) {
+   .abaut__desc {
+      width: 600px;
+   }
+   .abaout__img {
+      width: 600px;
+    
+   }
+}
+
+@media(max-width: 455px) {
+   .abaut__desc {
+      width: 600px;
+   }
+   .abaout__img {
+      width: 600px;
+      height: 300px;
+      
+   }
 }

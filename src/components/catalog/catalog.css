@@ -14,12 +14,14 @@
    display: flex;
    width: 100%;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 .catalog__wrapper__big {
    width: 547px;
    height: 384px;
    position: relative;
    cursor: pointer;
+   text-decoration: none;
 }
 .catalog__wrapper__big img {
    width: 547px;
@@ -37,9 +39,7 @@
    background: linear-gradient(180deg, #2A2A2A 0%, #2A2A2A 100%);
    border-radius: 0px 0px 9px 9px;
    width: 100%;
-   position: absolute;
-   bottom: -10px;
-   left: 0;
+   text-decoration: none;
 }
 
 .catalog__links {
@@ -53,4 +53,98 @@
    width: 100%;
    height: 100%;
    object-fit: fill;
+}
+
+@media(max-width: 1199px) {
+   .catalow__wrapper {
+      justify-content: space-around;
+   }
+   .catalog__wrapper__big {
+      width: 350px;
+      height: 290px;
+   }
+   .catalog__wrapper__big img {
+      width: 350px;
+      height: 290px;
+   }
+   .catalog__links {
+      grid-template-columns: repeat(2, 200px);
+      gap: 30px;
+   }
+}
+
+
+
+@media(max-width: 992px) {
+   .catalog__wrapper__big {
+      width: 600px;
+      height: 120px;
+   }
+   .catalog__wrapper__big img {
+      width: 600px;
+      height: 350px;
+   }
+
+   .catalog__links {
+      grid-template-columns: repeat(2, 280px);
+      gap: 30px;
+      margin-top: 290px;
+   }
+}
+
+
+@media(max-width: 769px) {
+   .catalog__wrapper__big {
+      width: 500px;
+      height: 350px;
+   }
+   .catalog__wrapper__big img {
+      width: 500px;
+      height: 350px;
+   }
+
+   .catalog__links {
+      grid-template-columns: repeat(2, 230px);
+      gap: 30px;
+      margin-top: 40px;
+   }
+}
+
+@media(max-width: 577px) {
+   .catalog__wrapper__big {
+      width: 400px;
+      height: 350px;
+   }
+   .catalog__wrapper__big img {
+      width: 400px;
+      height: 350px;
+   }
+
+   .catalog__links {
+      grid-template-columns: repeat(2, 180px);
+      gap: 30px;
+      margin-top: 40px;
+   }
+}
+
+@media(max-width: 420px) {
+   .catalog__wrapper__big {
+      width: 100%;
+      height: 120px;
+   }
+   .catalog__wrapper__big img {
+      width: 100%;
+      height: 120px;
+   }
+
+   .catalog__links {
+      width: 100%;
+      grid-template-columns: 100%;
+      gap: 30px;
+      margin-top: 40px;
+   }
+  .catalogItem {
+     width: 100%;
+     height: 120px;
+  }
 }

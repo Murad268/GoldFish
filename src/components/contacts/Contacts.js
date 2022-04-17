@@ -28,19 +28,19 @@ const Contacts = ({sendEmail }) => {
               <div className="contacts__infos">
                   <div className="contacts__info">
                      <img src={tel} alt="" className="contacts__tel__icon" />
-                     <div className="contacts__tel__desc"><span>Телефон:</span>+7 (495) 911-10-11</div>
+                     <div className="contacts__desc contacts__tel__desc"><span>Телефон:</span>+7 (495) 911-10-11</div>
                   </div>
                   <div className="contacts__info">
                      <img src={email} alt="" className="contacts__email__icon" />
-                     <div className="contacts__email__desc"><span>E-mail:</span> msk@magicgoldfish.ru</div>
+                     <div className="contacts__desc contacts__email__desc"><span>E-mail:</span> msk@magicgoldfish.ru</div>
                   </div>
                   <div className="contacts__info">
                      <img src={address} alt="" className="contacts__adress__icon" />
-                     <div className="contacts__adress__desc"><span>Адрес:</span> г. Москва ст.м. Таганская (кольцевая) Малый Дровяной переулок 6</div>
+                     <div className="contacts__desc contacts__adress__desc"><span>Адрес:</span> г. Москва ст.м. Таганская (кольцевая) Малый Дровяной переулок 6</div>
                   </div>
                   <div className="contacts__info">
                      <img src={time} alt="" className="contacts__time__icon" />
-                     <div className="contacts__time__desc"><span>Режим работы клуба:</span> 11:00-23:00 (ежедневно)</div>
+                     <div className="contacts__desc contacts__time__desc"><span>Режим работы клуба:</span> 11:00-23:00 (ежедневно)</div>
                   </div>
                   <h2 className="formTittle">Остались вопросы?</h2>
                   <Formik

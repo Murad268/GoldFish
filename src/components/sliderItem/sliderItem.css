@@ -49,3 +49,26 @@
    height: 32px;
    border: none
 }
+
+@media(max-width: 991px) {
+   .sliderItem {
+      width: 767px;
+    
+   }
+}
+
+
+@media(max-width: 767px) {
+   .sliderItem {
+      width: 575px;
+    
+   }
+}
+
+@media(max-width: 575px) {
+   .sliderItem {
+      width: 320px;
+    
+   }
+}
+
