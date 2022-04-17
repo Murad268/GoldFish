@@ -12,6 +12,7 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "font-awesome": "^4.7.0",
+    "formik": "^2.2.9",
     "jquery": "^3.6.0",
     "nouislider": "^15.5.1",
     "nouislider-react": "^3.4.1",
@@ -24,7 +25,8 @@
     "react-ui-slider": "^1.0.0",
     "swiper": "^8.1.1",
     "uuidv4": "^6.2.13",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

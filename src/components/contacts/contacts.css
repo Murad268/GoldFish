@@ -121,3 +121,10 @@
    margin-top: 15px;
    width: 404px;
 }
+.char__search-error {
+   background: black;
+   color: white;
+   margin: 10px 0 10px 0;
+   padding: 20px;
+   border-radius: 10px
+}

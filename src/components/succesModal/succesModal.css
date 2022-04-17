@@ -1,0 +1,62 @@
+.SuccesModal {
+   z-index: 16;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   background: rgba(0,0,0,0.4);
+   opacity: 0;
+   transition: visibility 0s linear 300ms, opacity 0.4s;
+   z-index: -100;
+}
+.SuccesModal__active {
+   visibility: visible;
+   opacity: 1;
+   transition: visibility 0s linear 0s, opacity 0.8s;
+   z-index: 150;
+   padding-right: 17px;
+}
+.succesModal__block {
+   width: 450px;
+   height: 300px;
+   background: white
+}
+
+.succes__img {
+   width: 150px;
+   height: 150px;
+   margin: 20px auto 0 auto;
+}
+
+.succes__img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.succes__desc {
+   width: 70%;
+   margin: 15px auto 0 auto;
+   text-align: center;
+   font-family: Oswald;
+   font-size: 20px;
+}
+
+
+
+.success__exit>img {
+   cursor: pointer;
+   width: 60px;
+   height: 60px;
+   object-fit: cover;
+   position: absolute;
+   right: 10px;
+   top: 10px;
+}
+
+
+

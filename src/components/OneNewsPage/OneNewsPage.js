@@ -15,7 +15,7 @@ const OneNewsPage = () => {
    useEffect(() => {
       // res.getRes("http://localhost:3000", `news/${newsId}`).then(res => setNews(res))
       // res.getRes("http://localhost:3000", "goods").then(res => setSpecials(res))
-      setNews(db.news[newsId])
+      setNews(db.news[newsId-1])
       setSpecials(db.goods)
    }, [])
    console.log(news)

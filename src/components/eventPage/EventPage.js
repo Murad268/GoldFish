@@ -4,7 +4,7 @@ import Services from '../../services/Services'
 import EventRegModal from '../eventRegModal/EventRegModal';
 import { db } from '../../db';
 import './eventPage.css'
-const EventPage = () => {
+const EventPage = ({sendEmail={sendEmail}}) => {
    const res = new Services()
    const [event, setEvent] = useState({})
    const [modalActive, setModalActive] = useState(false)
@@ -25,11 +25,11 @@ const EventPage = () => {
    const {eventId} = useParams()
    useEffect(() => {
       // res.getRes("http://localhost:3000", `events/${eventId}`).then(res => setEvent(res))
-      setEvent(db.events[eventId])
+      setEvent(db.events[eventId-1])
    }, [])
    return (
       <div className='eventPage'>
-         <EventRegModal exitModal={exitModal} modalActive={modalActive} />
+         <EventRegModal sendEmail={sendEmail} exitModal={exitModal} modalActive={modalActive} />
          <div style={{marginTop: "9px", marginBottom: "15px"}} className='container'>
            <Link to="/"  style={{color:"white", textDecoration: "none", padding: "0 10px 0 0", fontWeight: 900}}>Главная</Link> 
            {">"}    

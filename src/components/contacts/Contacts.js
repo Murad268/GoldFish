@@ -1,11 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { Formik, Form, Field, ErrorMessage as FormikErrorMessage } from 'formik';
+import * as Yup from 'yup'
+import SuccesModal from '../succesModal/SuccesModal';
 import Map from '../map/Map';
 import './contacts.css'
 import tel from '../../images/contacts/tel.png'
 import address from '../../images/contacts/location.png'
 import email from '../../images/contacts/email.png'
 import time from '../../images/contacts/time.png'
-const Contacts = () => {
+const Contacts = ({sendEmail }) => {
+   const [value, setValue] = useState({
+      name: ""
+   })
+   const sendMail = (e) => { 
+      // if I had an api and an error came from it, then errorSucces component would be used
+      document.querySelector(".manMenuForm").reset()
+      sendEmail()   
+   }
+   const setName = (e) => {
+      setValue(prev => ({...prev, name: e.target.value}))
+   }
    return (
       <div id='contacts' className='contacts'>
         <div className="container">
@@ -29,15 +43,36 @@ const Contacts = () => {
                      <div className="contacts__time__desc"><span>Режим работы клуба:</span> 11:00-23:00 (ежедневно)</div>
                   </div>
                   <h2 className="formTittle">Остались вопросы?</h2>
-                  <form action="#" className="manMenuForm">
-                     <label className='manMenuFormLabel' htmlFor="name"> Ваше имя </label>
-                        <input placeholder='Имя' type="text" id="name" name="name"/>
-                     <label className='manMenuFormLabel' htmlFor="tel"> Ваш телефон</label>
-                        <input  type="text" id="tel" name="tel"/>
-                     <label className='manMenuFormLabel' htmlFor="text">Ваш комментарий  </label>
-                        <textarea placeholder='Комментарий' name="text" id="text"></textarea>
-                        <button className="manMenuForm__button">Заказать звонок</button>
-                  </form>
+                  <Formik
+                     initialValues = {{
+                        name: '',
+                        tel: '',
+                        text: ''
+                  }}
+                  validationSchema = {Yup.object({
+                        name: Yup.string().required('Пожалуйста, укажите свое имя, чтобы связаться с нами'),
+                        tel: Yup.string().required('Пожалуйста, введите свой номер, чтобы мы могли связаться с вами'),
+                        text: Yup.string().required('Ваше мнение очень важно для нас')
+                  })}
+                     onSubmit  = { () => {
+                        sendMail()  
+                       
+                        
+                     }}
+                  >
+                     <Form action="#" className="manMenuForm">
+                        <label className='manMenuFormLabel' htmlFor="name"> Ваше имя </label>
+                           <Field  placeholder='Имя' type="text" id="name" name="name"/>
+                           <FormikErrorMessage component="div" className="char__search-error" name="name" />   
+                        <label className='manMenuFormLabel' htmlFor="tel"> Ваш телефон</label>
+                           <Field placeholder="Ваш телефон" type="text" id="tel" name="tel"/>
+                           <FormikErrorMessage component="div" className="char__search-error" name="tel" />   
+                        <label className='manMenuFormLabel' htmlFor="text">Ваш комментарий  </label>
+                           <Field as="textarea" placeholder='Комментарий' name="text" id="text"></Field>
+                           <FormikErrorMessage component="div" className="char__search-error" name="text" />   
+                           <button className="manMenuForm__button">Заказать звонок</button>
+                     </Form>
+                  </Formik>
                   <div className="formTittle__alert">
                   Нажимая на кнопку "Заказать звонок", <a href="#">я даю согласие на 
                   обработку персональных данных.</a>

@@ -4,7 +4,7 @@ import logo from '../../images/navbar/l3 1.png'
 import vk from '../../images/navbar/bi_instagram.png'
 import fb from '../../images/navbar/fb.png'
 import insta from '../../images/navbar/bi_instagram.png'
-const Footer = () => {
+const Footer = ({activatedModal}) => {
    return (
       <div className="footer-dark">
         <footer>
@@ -41,7 +41,7 @@ const Footer = () => {
                             <div><a href="">msk@magicgoldfish.ru</a></div>
                             <div>г. Москва ст.м. Таганская Малый Дровяной переулок 6</div>
                         </div>
-                        <button className="footer__button">Заказать звонок</button>
+                        <button onClick={() => activatedModal()} className="footer__button">Заказать звонок</button>
                     </div>
                     <div className="col item social">
                         <a href="#"><img src={insta} alt="" /></a>

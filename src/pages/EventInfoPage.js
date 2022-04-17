@@ -1,9 +1,9 @@
 import React from 'react';
 import EventPage from '../components/eventPage/EventPage';
-const EventInfoPage = () => {
+const EventInfoPage = ({sendEmail={sendEmail}}) => {
    return (
       <>
-         <EventPage/>
+         <EventPage sendEmail={sendEmail}/>
       </>
    );
 };

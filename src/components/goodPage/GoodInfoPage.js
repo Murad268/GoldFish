@@ -13,8 +13,10 @@ import GoodInfoPageBuy from '../goodInfoPageBuy/GoodInfoPageBuy';
 import { db } from '../../db';
 
 const GoodInfoPage = () => {
+   const setAll = () => {
+      setPrevies(prev => ( {...prev, transform: document.querySelectorAll(".goodPreview")[1].clientHeight()}))
+   }
    const {goodId} = useParams()
-
    const res = new Services()
    const [goods, setGoods] = useState([])
    const [slider, setSlider] = useState({
@@ -25,6 +27,7 @@ const GoodInfoPage = () => {
       offset: 0,
       transform: 105
    })
+  
    const [active, setActive] = useState({
       slide: 1,
       prev: 0,
@@ -32,18 +35,22 @@ const GoodInfoPage = () => {
    })
   
    const cleanActive = () => {
+      
       document.querySelectorAll(".goodPreview").forEach(item => {
          item.classList.remove("active__prew")
          
       })
    }
    const dots = (e, id) => {
+      
       setActive(prev => ({...prev, slide: id, prev: id-1}))
       cleanActive()
       e.target.parentNode.classList.add("active__prew")
       setSlider(prev => ( {...prev, offset: (id-1) * prev.transform}))
    }
    useEffect(() => {
+     
+      
       setPrevies(prev => ( {...prev, offset: active.prev * prev.transform}))
    }, [active.prev])
    const swipe = (e) => {
@@ -94,7 +101,7 @@ const GoodInfoPage = () => {
 
    useState(() => {
       // res.getRes("http://localhost:3000", `goods/${goodId}`).then(res => setGoods(res))
-      setGoods(db.goods[goodId])
+      setGoods(db.goods[goodId-1])
    }, [])
 
    return (
@@ -145,6 +152,7 @@ const GoodInfoPage = () => {
         </div>
         
       </div>
+      
    );
 };
 

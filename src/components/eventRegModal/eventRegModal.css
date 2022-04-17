@@ -22,7 +22,7 @@
 }
 .eventRegModal__div {
    width: 427px;
-   height: 400px;
+   min-height: 400px;
    background: #FFFFFF;
    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
    border-radius: 9px;
@@ -57,6 +57,7 @@
    width: 346px;
    height: 45px;
    margin-bottom: 16px;
+   padding-left: 20px;
 }
 .eventRegModal__div__link {
    font-family: 'Trebuchet MS';
