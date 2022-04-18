@@ -15,14 +15,14 @@
 
 .navbar__menu__wrapper {
    list-style: none;
-   padding: 100px 0 0 100px;
+   padding: 50px 0 0 100px;
    margin: 0;
 }
 .navbar__menu__wrapper .navbar__item .navbar__item__link {
-   font-size: 42px;
-   line-height: 86px;
+   font-size: 32px;
+   line-height: 56px;
    color: white;
-   padding: 10px;
+   padding: 5px;
    transition: all 0.6s;
 }
 .navbar__menu__wrapper .navbar__item {
@@ -43,10 +43,10 @@
 
 @media(max-width: 579px) {
    .navbar__menu__wrapper {
-      padding: 100px 0 0 50px
+      padding: 50px 0 0 50px
    }
    .navbar__menu__wrapper .navbar__item .navbar__item__link {
-      padding: 5;
+      padding: 2;
       font-size: 30px;
    }
 }
