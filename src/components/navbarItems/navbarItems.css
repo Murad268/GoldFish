@@ -18,10 +18,10 @@
 .navbar__hamburger {
    width: 30px;
    height: 20px;
-   display: flex;
    flex-direction: column;
    justify-content: space-between;   
    z-index: 10000;
+   display: none;
 }
 .active__hambuger .firstSpan {
    transform: rotate(-50.57deg);
@@ -30,6 +30,7 @@
    transform: rotate(50.57deg);
    margin-bottom: 10px;
 }
+
 .navbar__hamburger>span {
    transition: 0.4s;
    display: block;
@@ -49,4 +50,17 @@
 .navbar__hamburger:hover {
    cursor: pointer;
 }
-
+@media(max-width: 992px) {
+   .navbar__items__list .navbar__item .navbar__item__link {
+      font-size: 13px;
+   }
+  
+}
+@media(max-width: 769px) {
+   .navbar__items__list {
+      display: none;
+   }
+   .navbar__hamburger {
+      display: flex;
+   }
+}

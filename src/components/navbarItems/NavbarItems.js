@@ -21,10 +21,10 @@ const NavbarItems = () => {
         setModalActive(prev => !prev)
         if(modalActive === false) {
            document.body.style.overflow = "hidden"
-           document.querySelector("html").style.paddingRight = "17px"
+          
         } else {
            document.body.style.overflow = ""
-           document.querySelector("html").style.paddingRight = ""
+        
         }
 
      
@@ -37,17 +37,23 @@ const NavbarItems = () => {
             document.querySelector(".navbar__hamburger").classList.toggle("active__hambuger")
             setModalActive(false)
             document.body.style.overflow = ""
-            document.querySelector("html").style.paddingRight = ""
-         }    
-         
+           
+         }      
+   }
+   const exitAfterClick = () => {
+      document.querySelector(".navbar__hamburger").classList.toggle("active__hambuger")
+      setModalActive(false)
+      document.body.style.overflow = ""
+      document.querySelector("html").style.paddingRight = ""
    }
    return (
     <>
       
-         <Modal modalActive={modalActive} exitModal={exitModal}/>
+         
         
     
        <div className="navbarItems">
+       <Modal exitAfterClick={exitAfterClick} states={states} modalActive={modalActive} exitModal={exitModal}/>
         <div className="container">
             <div className="navbatItems__wraper">
                <div onClick={modalActivated} className="navbar__hamburger">
@@ -55,16 +61,19 @@ const NavbarItems = () => {
                   <span className='secondSpan'></span>
                   <span></span>
                </div>
+           
+               
                <ul className='navbar__items__list'>
-               {
-                     states.map(state => {
-                        
-                           return <NavbarItem to={state.to} key={state.id} value = {state.value}/>
-                        
-                        
-                     })
-               }
-            </ul>
+                  {
+                        states.map(state => {
+                           
+                              return <NavbarItem to={state.to} key={state.id} value = {state.value}/>
+                           
+                           
+                        })
+                  }
+               </ul>
+     
             <div className="navbar__social__link">
                <a href=""><img src={insta} alt="" /></a>
                <a href=""><img src={vk} alt="" /></a>

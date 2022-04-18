@@ -1,14 +1,24 @@
 import React from 'react';
 import './modal.css'
-const Modal = ({exitModal, modalActive}) => {
+import NavbarItem from '../navbarItem/NavbarItem';
+const Modal = ({exitModal, modalActive, states, exitAfterClick}) => {
    let modalClass = !modalActive ? "modalBlock" : "modalBlock modalBlock__active"
-   let modal = !modalActive ? "modal" : "modal modal__active"
-   return (
-      <div onClick={exitModal} className={modal}>
-         <div className={modalClass}>
 
+   return (
+     
+         <div className={modalClass}>
+            <ul className="navbar__menu__wrapper">
+                  {
+                        states.map(state => {
+                           
+                              return <NavbarItem exitAfterClick={exitAfterClick} to={state.to} key={state.id} value = {state.value}/>
+                           
+                           
+                        })
+                  }
+            </ul>
          </div>
-      </div>
+      
    );
 };
 

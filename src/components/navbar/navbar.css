@@ -65,3 +65,26 @@
 .navra__user img {
    display: block;
 }
+
+@media(max-width: 992px) {
+   .nav__tel {
+      font-size: 15px;
+   }
+   .navbar__search input {
+      width: 200px;
+   }
+}
+
+@media(max-width: 769px) {
+   .navbar__search input {
+      display: none;
+   }
+}
+
+
+
+@media(max-width: 577px) {
+   .navbar__contact {
+      display: none;
+   }
+}

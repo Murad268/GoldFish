@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import CatalogPageItems from '../components/CatalogPageItems/CatalogPageItems';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import filter from '../images/filter/Без названия.png'
 const CatalogPage = () => {
-  const {forIt} =  useParams()
-  
+   const {forIt} =  useParams()
+   const [menu, setMenu] = useState(false)
    const [goodNem = "all", setGoodName] = useState(forIt)
    const [mainLink, setMainLink] = useState("")
    const [subLink, setSublink] = useState("")
@@ -574,6 +575,10 @@ const CatalogPage = () => {
           return items.filter(item => item.price > filter.from && item.price < filter.to)
       }
    }
+   const filterMenu = () => {
+    setMenu(prev => !prev)
+   }
+  
    return (
       <>                          
          <div style={{marginTop: "29px", marginBottom: "9px"}} className='container'>
@@ -593,9 +598,9 @@ const CatalogPage = () => {
              :null
            }
            <span style={{padding: "0 0 0 10px", fontWeight: 300 }}>{subLink}</span>
-           
+           <div onClick={filterMenu} className='filter__menu'><img src={filter} alt="" /></div>
            </div>
-         <CatalogPageItems interval = {interval} discount={discount} availability = {availability} setFilters={setFilters} filters={filters} onFilter={onFilter}  filterPost={filterPost} setGoodName={setGoodName}  goodNem={goodNem} lists={lists}/>
+         <CatalogPageItems   menu={menu} interval = {interval} discount={discount} availability = {availability} setFilters={setFilters} filters={filters} onFilter={onFilter}  filterPost={filterPost} setGoodName={setGoodName}  goodNem={goodNem} lists={lists}/>
       </>
    );
 };

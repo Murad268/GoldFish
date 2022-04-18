@@ -1,3 +1,4 @@
+
 .catalogPageItems {
    padding: 30px 0 85px 0;
 }
@@ -7,8 +8,9 @@
    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
    border-radius: 9px;
    width: max-content;
-   margin-right: 30px;
+   margin-right: 5px;
    height: max-content;
+   transition: 0.4s all;
 }
 hr {
    width: 100%;
@@ -102,11 +104,13 @@ hr {
 
 .catalogPageItems__wrapper {
    display: flex; 
+
 }
 .goods__wrapper {
    display: grid;
    grid-template-columns: repeat(3, 255px);
-   gap: 10px;
+   gap: 5px;
+   justify-content: space-between;
 }
 .all_acategory {
    font-family: 'Trebuchet MS';
@@ -146,4 +150,38 @@ hr {
 }
 .good__load:active {
    transform: scale(0.88);
+}
+.filter__menu {
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+}
+.filter__menu img {
+   height: 100%;
+   width: 100%;
+}
+@media(max-width: 1320px) {
+   .catalogPageItems__wrapper {
+      justify-content: space-around;
+   }
+   .goods__wrapper {
+      grid-template-columns: repeat(2, 255px);
+   }
+}
+
+@media(max-width: 992px) {
+   .catalog__filter {
+      position: absolute;
+      left: -100%;
+      z-index: 250;
+   }
+   .catalog__filter__active {
+      left: -0%;
+   }
+}
+
+@media(max-width: 589px) {
+   .goods__wrapper {
+      grid-template-columns: repeat(1, 255px);
+   }
 }

@@ -14,7 +14,7 @@ const EventListItem = ({event}) => {
             </div>
             <div className="event__desc">
                {
-                  event.desc.length > 70 ? <p>{event.desc.slice(0, 200)}...</p>:event.desc
+                  event.desc.length > 70 ? <p>{event.desc.slice(0, 60)}...</p>:event.desc
                }
             </div>
          </div>

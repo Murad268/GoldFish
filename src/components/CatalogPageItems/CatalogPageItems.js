@@ -4,9 +4,10 @@ import Services from '../../services/Services'
 import CatalogListItem from '../catalogListItem/CatalogListItem';
 import GoodItem from '../gooItem/GoodItem';
 import { db } from '../../db';
-const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, onFilter, filters, setFilters, availability, discount, interval}) => {
 
-   console.log(db)
+const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, onFilter, filters, setFilters, availability, discount, interval, menu}) => {
+
+  
    const res = new Services()
    const [goods, setGoods] = useState([])
    const filteredItems = interval(discount(availability(onFilter(filterPost(goods, goodNem), filters), filters) , filters), filters) 
@@ -20,18 +21,19 @@ const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, o
     document.querySelector(".all_acategory").classList.toggle("listItem__active")
     e.target.classList.toggle("listBtn__active")
   }
+  const className = !menu?"catalog__filter":"catalog__filter catalog__filter__active"
    return (
-      <div className='catalogPageItems'>
-        <div className="container">
+      <div  className='catalogPageItems'>
+        <div  className="container">
          <div className="catalogPageItems__wrapper">
-              <div className="catalog__filter">
+              <div className={className}>
                <ul className="all_acategory listItem__active">
                <p onClick={() => setGoodName("all")}>Все категории</p>
                   <li>
                     <ul className="catalogPage__list">
                       {
                           lists.map(list => {
-                              return <CatalogListItem setActive={setActive} list={list} key={list.id}/> 
+                              return <CatalogListItem  setActive={setActive} list={list} key={list.id}/> 
                           })
                       }
                       <div onClick={listVisibility} className='listBtn'></div>

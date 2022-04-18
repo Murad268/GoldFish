@@ -19,7 +19,7 @@
    line-height: 27px;
    color: #FFFFFF;
    display: block;
-   margin: 38px auto 0 auto;
+   margin: 148px auto 0 auto;
    border: none;
    display: flex;
    justify-content: center;
@@ -47,10 +47,13 @@
 
 @media(max-width: 992px) {
    .eventList__wrapper {
-      grid-template-columns: repeat(2, 300px);
+      width: 100%;
+      grid-template-columns: 100%;
+      row-gap: 10px;
    }
    .eventList__wrapper .eventListItem {
-      height: 250px
+      height: 350px;
+
    }
    .eventList__wrapper .eventListItem__footer {
       padding: 10px;

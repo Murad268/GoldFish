@@ -68,7 +68,7 @@
 @media(max-width: 575px) {
    .sliderItem {
       width: 320px;
-    
+      height: 217px;
    }
 }
 

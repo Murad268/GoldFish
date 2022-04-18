@@ -1,6 +1,6 @@
 import React from 'react';
 import './catalogListItem.css'
-const CatalogListItem = ({list}) => {
+const CatalogListItem = ({list, FilterMenu}) => {
    const listVisibility = (e) => {
       e.target.closest("li").classList.toggle("listItem__active")
       e.target.classList.toggle("listBtn__active")
@@ -18,11 +18,17 @@ const CatalogListItem = ({list}) => {
    setActive()
    return (
       <li  className='listItem' >
-         <p onClick={list.function}>{list.name}</p>
+         <p onClick={() => {
+            list.function()
+            FilterMenu()
+         }}>{list.name}</p>
         <ul className='listOfList'>
          {
                list.variants.map(variant => {
-                  return <li className="liItem" onClick={variant.function} key={variant.id}>{variant.name}</li>
+                  return <li className="liItem" onClick={() => {
+                     variant.function()
+                     FilterMenu()
+                  }} key={variant.id}>{variant.name}</li>
                })
          }
                <div onClick={listVisibility} className='listBtn'>                 
