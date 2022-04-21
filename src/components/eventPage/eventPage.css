@@ -22,9 +22,10 @@
    color: white
 }
 .eventPage__wrapper {
-   display: grid;
-   grid-template-columns: 70% 20%;
-   column-gap: 27px;
+   display: flex;
+}
+.event__information {
+   margin-right: 40px;
 }
 .event__information img {
    width: 100%;
@@ -37,7 +38,6 @@
    font-weight: 400;
    font-size: 28px;
    line-height: 29px;
-   text-align: justify;
    color: white;
    margin-top: 40px;
    background: black;
@@ -95,3 +95,79 @@
 }
 
 
+@media(max-width: 1150px) {
+   .event__information img {
+      width: 400px;
+   }
+   .eventReg {
+      width: 300px;
+   }
+   .eventReg h5 {
+      font-size: 18px;
+   }
+   .eventReg__button {
+      width: 200px;
+      font-size: 15px;
+   }
+   .eventReg div {
+      font-size: 15px;
+   }
+}
+
+@media(max-width: 768px) {
+   .event__information img {
+      width: 300px;
+   }
+   .eventReg {
+      width: 200px;
+      height: max-content;
+   }
+   .eventReg h5 {
+      font-size: 12px;
+      line-height: 14px;
+   }
+   .eventReg__button {
+      width: 100px;
+      height: max-content;
+      font-size: 10px;
+      margin-top: 20px;
+   }
+   .eventReg div {
+      font-size: 12px;
+      line-height: 10px;
+   }
+   .event__information p {
+      font-size: 20px;
+   }
+   #event__tittle {
+      font-size: 25px;  
+   }
+}
+
+@media(max-width: 576px) {
+   .event__information {
+      margin: 0;
+   }
+   .event__information img {
+
+      width: 100%;
+
+   }
+   .eventPage__wrapper {
+      flex-direction: column;
+      align-items: center;
+   }
+   .eventReg {
+      width: 100%;
+      text-align: center;
+   }
+   .eventReg h5{
+      font-size: 20px;
+   }
+   .eventReg div{
+      font-size: 16px;
+   }
+   .eventReg__button {
+      margin: 30px auto 0 auto;
+   }
+}

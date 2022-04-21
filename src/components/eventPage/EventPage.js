@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Services from '../../services/Services'
 import EventRegModal from '../eventRegModal/EventRegModal';
+import {Helmet} from 'react-helmet'
 import { db } from '../../db';
 import './eventPage.css'
 const EventPage = ({sendEmail={sendEmail}}) => {
@@ -28,6 +29,13 @@ const EventPage = ({sendEmail={sendEmail}}) => {
       setEvent(db.events[eventId-1])
    }, [])
    return (
+   <>
+        <div className="application">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>{event.name}</title>
+            </Helmet>
+        </div>
       <div className='eventPage'>
          <EventRegModal sendEmail={sendEmail} exitModal={exitModal} modalActive={modalActive} />
          <div style={{marginTop: "9px", marginBottom: "15px"}} className='container'>
@@ -38,7 +46,7 @@ const EventPage = ({sendEmail={sendEmail}}) => {
          <div className="container">
             <div className="eventPage__wrapper">
                <div className="event__information">
-                  <h5 className='event__tittle'>{event.name}</h5>
+                  <h5 id='event__tittle' className='event__tittle'>{event.name}</h5>
                   <div className='event__time'>{event.time?event.time.split(" ")[0]:null}</div>
                   <img src={event.img} alt="" />
                   <p>{event.desc}</p>
@@ -54,6 +62,7 @@ const EventPage = ({sendEmail={sendEmail}}) => {
             </div>
          </div>
       </div>
+   </>
    );
 };
 

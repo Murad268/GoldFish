@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import CatalogPageItems from '../components/CatalogPageItems/CatalogPageItems';
+import {Helmet} from 'react-helmet'
 import { useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import filter from '../images/filter/Без названия.png'
 const CatalogPage = () => {
    const {forIt} =  useParams()
@@ -580,7 +581,13 @@ const CatalogPage = () => {
    }
   
    return (
-      <>                          
+      <>      
+        <div className="application">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Catalog</title>
+            </Helmet>
+        </div>                    
          <div style={{marginTop: "29px", marginBottom: "9px"}} className='container'>
          <Link to="/"  style={{color:"black", textDecoration: "none", padding: "0 10px 0 0", fontWeight: 900}}>Главная</Link>    
            {

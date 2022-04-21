@@ -7,3 +7,10 @@
    line-height: 19px;
    color: #000000;
 }
+
+
+@media(max-width: 450px) {
+   .description {
+      font-size: 12px;
+   } 
+}

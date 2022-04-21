@@ -28,7 +28,7 @@ const GoodAnswers = ({good}) => {
 
    return (
       
-      <div className='goodAnswers'>
+      <div className='container goodAnswers'>
         <div className="good__tabs">
             {
                tabs.map(tab => {

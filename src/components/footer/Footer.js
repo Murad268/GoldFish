@@ -1,10 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './footer.css'
 import logo from '../../images/navbar/l3 1.png'
 import vk from '../../images/navbar/bi_instagram.png'
 import fb from '../../images/navbar/fb.png'
 import insta from '../../images/navbar/bi_instagram.png'
 const Footer = ({activatedModal}) => {
+    const onUp = (id) => {
+        window.scrollTo(0, 0);
+    }
    return (
       <div className="footer-dark">
         <footer>
@@ -13,23 +17,20 @@ const Footer = ({activatedModal}) => {
                     <div className="col-sm-6 col-md-3 item">
                         <h3>Каталог</h3>
                         <ul>
-                            <li><a href="#">Warhammer 40000</a></li>
-                            <li><a href="#">Настольные игры</a></li>
-                            <li><a href="#">Magic: the Gathering</a></li>
-                            <li><a href="#">Аксессуары для игр</a></li>
-                            <li><a href="#">Краски</a></li>
-                            <li><a href="#">Краски</a></li>
-                            <li><a href="#">Аксессуары для</a></li>
-                            <li><a href="#">моделизма</a></li>
+                            <li><Link onClick={onUp} to={"/warhammer"} >Warhammer 40000</Link></li>
+                            <li><Link onClick={onUp} to={"/board"}>Настольные игры</Link></li>
+                            <li><Link onClick={onUp} to={"/magic"}>Magic: the Gathering</Link></li>
+                            <li><Link onClick={onUp} to={"acc"}>Аксессуары для игр</Link></li>
+                            <li><Link onClick={onUp} to={"/colors"}>Краски</Link></li>
+                            <li><Link onClick={onUp} to={"/model"}>Аксессуары для моделизма</Link></li>
                         </ul>
                     </div>
                     <div className="col-sm-6 col-md-3 item">
-                        <h3>Правила клуба</h3>
+                        <h3>Разделы</h3>
                         <ul>
-                            <li><a href="#">Мероприятия</a></li>
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">Блог</a></li>
+                            <li><Link to={"/events"}>Мероприятия</Link></li>
+                            <li><Link to={"/about"}>О нас</Link></li>
+                            <li><Link to={"/contacts"}>Контакты</Link></li>
                         </ul>
                     </div>
                     <div className="col-md-6 item text">
@@ -44,9 +45,9 @@ const Footer = ({activatedModal}) => {
                         <button onClick={() => activatedModal()} className="footer__button">Заказать звонок</button>
                     </div>
                     <div className="col item social">
-                        <a href="#"><img src={insta} alt="" /></a>
-                        <a href="#"><img src={fb} alt="" /></a>
-                        <a href="#"><img src={vk} alt="" /></a>
+                        <a href="https://www.instagram.com/club.goldfish/"><img src={insta} alt="" /></a>
+                        <a href="https://www.facebook.com/magicgoldfish/"><img src={fb} alt="" /></a>
+                        <a href="https://vk.com/goldfishwargames"><img src={vk} alt="" /></a>
                     </div>
                 </div>
                 <p className="copyright">Goldfish © 2022</p>

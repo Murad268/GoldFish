@@ -19,18 +19,19 @@
 }
 .catalog__wrapper__big {
    width: 547px;
-   height: 384px;
+   height: 440px;
    position: relative;
    cursor: pointer;
    text-decoration: none;
 }
+
 .catalog__wrapper__big img {
+   height: 384px;
    width: 547px;
    object-fit: fill;
    border-radius: 20px 20px 0 0
 }
 .catalog__wrapper__big__desc {
-
    font-family: 'Trebuchet MS';
    font-style: normal;
    font-weight: 700;
@@ -42,6 +43,9 @@
    border-radius: 0px 0px 9px 9px;
    width: 100%;
    text-decoration: none;
+   position: absolute;
+   bottom: 0;
+   left: 0;
 }
 
 .catalog__links {
@@ -62,17 +66,28 @@
       justify-content: space-around;
    }
    .catalog__wrapper__big {
-      width: 350px;
-      height: 290px;
+      width: 400px;
+      height: 450px;
    }
    .catalog__wrapper__big img {
-      width: 350px;
-      height: 290px;
+      width: 400px;
+      height: 450px;
    }
    .catalog__links {
-      grid-template-columns: repeat(2, 200px);
-      gap: 30px;
+      grid-template-columns: repeat(2, 220px);
+      gap: 10px;
    }
+   .catalogItem__img__block {
+      width: 220px;
+      height: 217px;
+   }
+   .catalogItem__img__block img {
+      width: 220px;
+      height: 217px;
+      object-fit: fill;
+      border-radius: 20px 
+   }
+   
 }
 
 
@@ -91,6 +106,19 @@
       grid-template-columns: repeat(2, 280px);
       gap: 30px;
       margin-top: 290px;
+   }
+   .catalogItem__img__block {
+      width: 280px;
+      height: 217px;
+   }
+   .catalogItem__img__block img {
+      width: 280px;
+      height: 217px;
+      object-fit: fill;
+      border-radius: 20px 
+   }
+   .catalog__wrapper__big__desc {
+      position: static
    }
 }
 
@@ -111,17 +139,27 @@
       gap: 30px;
       margin-top: 40px;
    }
+   .catalogItem__img__block {
+      width: 230px;
+      height: 217px;
+   }
+   .catalogItem__img__block img {
+      width: 230px;
+      height: 217px;
+      object-fit: fill;
+      border-radius: 20px 
+   }
    
 }
 
 @media(max-width: 577px) {
    .catalog__wrapper__big {
-      width: 400px;
-      height: 350px;
+      width: 100%;
+      height: 217px;
    }
    .catalog__wrapper__big img {
-      width: 400px;
-      height: 350px;
+      width: 100%;
+      height: 217px;
    }
 
    .catalog__links {
@@ -129,28 +167,29 @@
       gap: 30px;
       margin-top: 40px;
    }
-  
+   .catalogItem__img__block {
+      width: 180px;
+      height: 217px;
+   }
+   .catalogItem__img__block img {
+      width: 180px;
+      height: 217px;
+      object-fit: fill;
+      border-radius: 20px 
+   }
 
 }
 
 @media(max-width: 420px) {
-   .catalog__wrapper__big {
-      width: 100%;
-      height: 120px;
-   }
-   .catalog__wrapper__big img {
-      width: 100%;
-      height: 120px;
-   }
+ .catalog__links {
+   width: 100%;
+   grid-template-columns: 100%;
+ }
+ .catalogItem__img__block {
+   width: 100%
+}
+.catalogItem__img__block img {
+   width: 100%
+}
 
-   .catalog__links {
-      width: 100%;
-      grid-template-columns: 100%;
-      gap: 30px;
-      margin-top: 40px;
-   }
-  .catalogItem {
-     width: 100%;
-     height: 120px;
-  }
 }

@@ -10,7 +10,7 @@ const NavbarItems = () => {
    const [modalActive, setModalActive] = useState(false)
    const [states, setStates] = useState([
       {id: 1, value: "Каталог", to: "catalog"},
-      {id: 2, value: "Wharhammer", to: ""},
+      {id: 2, value: "Wharhammer", to: "warhammer"},
       {id: 3, value: "Magic:the Cathering", to: "magic"},
       {id: 4, value: "Мероприятия", to: "events"},
       {id: 5, value: "О центре", to: "about"},
@@ -76,8 +76,8 @@ const NavbarItems = () => {
      
             <div className="navbar__social__link">
                <a href=""><img src={insta} alt="" /></a>
-               <a href=""><img src={vk} alt="" /></a>
-               <a href=""><img src={fb} alt="" /></a>
+               <a href="https://vk.com/goldfishwargames"><img src={vk} alt="" /></a>
+               <a href="https://www.facebook.com/magicgoldfish/"><img src={fb} alt="" /></a>
             </div>
             </div>
         </div>

@@ -28,6 +28,7 @@
    display: flex;
    margin: 30px auto 0 auto;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 .newsPageGoods__wrapper .good__item {
    margin-right: 30px;
@@ -41,4 +42,11 @@
    color: #2A2A2A;
    margin-bottom: 45px;
    margin-top: 30px;
+}
+
+@media(max-width: 789px) {
+   .newsPageGoods__wrapper {
+      flex-direction: column;
+      align-items: center
+   }
 }

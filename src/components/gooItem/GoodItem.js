@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './goodItem.css'
 const GoodItem = ({good}) => {
    return (
-      <div className='good__item'>
+      <div  className='good__item'>
          {
             good.discount?
             <div className="good__discount__percent">

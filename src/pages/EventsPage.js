@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import EventsListElementPage from '../components/EventsListElementPage/EventsListElementPage';
 import { Link } from 'react-router-dom';
+import {Helmet} from 'react-helmet'
 const EventsPage = () => {
 
    const [events, setEvents] = useState([])
@@ -79,6 +80,12 @@ const EventsPage = () => {
    }
    return (
       <>
+        <div className="application">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Events</title>
+            </Helmet>
+        </div>
           <div style={{marginTop: "29px"}} className='container'>
                   <Link to="/"  style={{color:"black", textDecoration: "none", padding: "0 10px 0 0", fontWeight: 900}}>Главная</Link> 
                   {">"}    

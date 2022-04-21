@@ -1,6 +1,9 @@
 .good__buy {
    width: 348px;
    padding: 23px 32px 32px 23px;
+   background: #FFFFFF;
+   box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
+   border-radius: 9px;
 }
 .good__code {
    text-align: right;
@@ -125,3 +128,24 @@
    padding: 10px;
    margin: 0;
 }
+
+
+@media(max-width: 1200px) {
+   .good__buy {
+      width: 574px;
+      margin-top: 40px;
+   }
+}
+@media(max-width: 789px) {
+   .good__buy {
+      width: 400px;
+      margin-top: 40px;
+   }
+}
+@media(max-width: 450px) {
+   .good__buy {
+      width: 100%;
+      margin-top: 40px;
+   }
+}
+

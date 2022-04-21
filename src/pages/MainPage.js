@@ -1,4 +1,5 @@
 import React  from 'react';
+import {Helmet} from "react-helmet";
 import SldierItems from '../components/sliderItems/SldierItems';
 import Catalog from '../components/catalog/Catalog';
 import GoodCatalogListSlider from '../components/goodCatalogListSlider/GoodCatalogListSlider';
@@ -10,6 +11,12 @@ import Contacts from '../components/contacts/Contacts';
 const MainPage = ({sendEmail}) => {
    return (
       <>
+         <div className="application">
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Home</title>
+            </Helmet>
+        </div>
          <SldierItems/>
          <Catalog/>
          <GoodCatalogListSlider/>

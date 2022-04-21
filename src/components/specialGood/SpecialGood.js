@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import SpecialItem from '../specialGoodItem/SpecialGood';
+import { useSwipeable } from 'react-swipeable';
 import Services from '../../services/Services'
 import './specialGood.css'
 import right from '../../images/goods/slider/Vector.png'
@@ -32,6 +33,10 @@ const SpecialGood = () => {
          setOffset(prev => prev - width)
       }
    }
+   const swipe = useSwipeable({
+      onSwipedLeft: (eventData) => nextSlide(),
+      onSwipedRight: (eventData) => prevSlide(),
+    });
    return (
       <>
           <div className='goodSlider'>
@@ -40,7 +45,7 @@ const SpecialGood = () => {
                Специальные предложения
             </h3>
             <div className="goodSlider__wrapper">
-               <div style={{transform: `translateX(-${offset}px)`}} className="goodSlider__inner">
+               <div {...swipe} style={{transform: `translateX(-${offset}px)`}} className="goodSlider__inner">
                   {
                      goods.map(good => {
                         return <SpecialItem good={good} key={good.id}/>

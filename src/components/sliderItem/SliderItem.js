@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './sliderItem.css'
 const SliderItem = ({slider}) => {
    return (
@@ -6,7 +7,9 @@ const SliderItem = ({slider}) => {
          <img src={slider.img}alt="" />
          <h4 className="sldierItem__subtittle">{slider.subTittle}</h4>
          <h5 className="sliderItem__tittle">{slider.tittle}</h5>
-         <button className="sliderItem__button">Подробнее</button>
+         <Link to = {`/${slider.for}`}>
+            <button className="sliderItem__button">Подробнее</button>
+         </Link>
       </div>
    );
 };

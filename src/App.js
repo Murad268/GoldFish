@@ -48,7 +48,6 @@ const App = () => {
               <Route path='/contacts' element={<ContactPage/>}/>
               <Route path='/NewsPage/:newsId' element={<NewsPage/>}/>
               <Route path='/catalog/:goodId' element={<GoodPage/>}/>
-         
             </Routes>
           </Suspense>
           <Footer activatedModal={activatedModal}/>

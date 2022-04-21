@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { useSwipeable } from 'react-swipeable';
 import './sliderItems.css'
 import SliderItem from '../sliderItem/SliderItem';
 import Services from '../../services/Services'
@@ -33,10 +34,13 @@ const SldierItems = () => {
          setOffset(prev => prev - width)
       }
    }
-  
+   const handler = useSwipeable({
+      onSwipedLeft: (eventData) => nextSlide(),
+      onSwipedRight: (eventData) => prevSlide(),
+    });
    return (
       <div className='slider__wrapper'>
-         <div style={{transform: `translateX(-${offset}px)`}} className="slider__inner">
+         <div {...handler} style={{transform: `translateX(-${offset}px)`}} className="slider__inner">
             {
                sliders.map(slider => {
                   return <SliderItem slider={slider} key={slider.id}/>

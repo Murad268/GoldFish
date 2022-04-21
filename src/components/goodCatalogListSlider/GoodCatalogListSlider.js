@@ -1,13 +1,18 @@
 import React, {useState, useEffect} from 'react';
+import { useSwipeable } from 'react-swipeable';
 import GoodItem from '../gooItem/GoodItem';
-import Services from '../../services/Services'
+// import Services from '../../services/Services'
 import './goodCatalogListSlider.css'
 import right from '../../images/goods/slider/Vector.png'
 import left from '../../images/goods/slider/Vector (1).png'
 import { db } from '../../db';
 const GoodCatalogListSlider = () => {
-   const res = new Services()
+   // const res = new Services()
    const [goods, setGoods] = useState([])
+   const [target, setTarget] = useState({
+      start: undefined,
+      end: undefined
+   })
    const [offset, setOffset] = useState(0)
    useEffect(() => {
       // res.getRes("http://localhost:3000", "goods").then(res => setGoods(res))
@@ -31,6 +36,10 @@ const GoodCatalogListSlider = () => {
          setOffset(prev => prev - width)
       }
    }
+   const swipe = useSwipeable({
+      onSwipedLeft: (eventData) => nextSlide(),
+      onSwipedRight: (eventData) => prevSlide(),
+    });
    return (
       <>
           <div className='goodSlider'>
@@ -39,7 +48,7 @@ const GoodCatalogListSlider = () => {
                Успей купить
             </h3>
             <div className="goodSlider__wrapper">
-               <div style={{transform: `translateX(-${offset}px)`}} className="goodSlider__inner">
+               <div {...swipe} style={{transform: `translateX(-${offset}px)`}} className="goodSlider__inner">
                   {
                      goods.map(good => {
                         return <GoodItem good={good} key={good.id}/>

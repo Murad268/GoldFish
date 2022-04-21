@@ -4,7 +4,7 @@
    background-color: white;
    left: -100%;
    transition: 0.4s all;
-   z-index: 200;
+   z-index: 400;
 }
 .modalBlock__active {
    left: 0;
