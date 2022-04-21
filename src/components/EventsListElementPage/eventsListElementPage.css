@@ -47,7 +47,9 @@
    font-size: 16px;
    line-height: 27px;
    color: #2A2A2A;
+
 }
+
 .event__filter__box h5 {
    font-family: 'Trebuchet MS';
    font-style: normal;
@@ -64,6 +66,9 @@
    box-shadow: 5px 6px 16px rgba(42, 42, 42, 0.16);
    margin-top: 28px;
    padding: 27px 37px 43px 23px;
+}
+.event__filter__box {
+   margin-top: 80px;
 }
 .event__filter__box input {
    width: 21px;

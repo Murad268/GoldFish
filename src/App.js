@@ -12,7 +12,9 @@ import NewsPage from './pages/NewsPage'
 import GoodPage from './pages/GoodPage';
 import SuccesModal from './components/succesModal/SuccesModal';
 import ContactModal from './components/contactModal/ContactModal'
+import upF from './images/up/up-arrow-png-27176-Windows.ico'
 const App = () => {
+      const [up, setUp] = useState(false)
       const [send, setSend] = useState({
         error: false,
         succes: false
@@ -31,6 +33,21 @@ const App = () => {
       const exitActivatedModal = () => {
         setActiveModal(false)
       }
+      
+
+      const scrolling = () => {
+       
+    
+        window.addEventListener("scroll", () => {
+           if(document.documentElement.scrollTop > 650) {
+              setUp(true)
+           } else {
+              setUp(false)
+           }
+        });
+        
+     };
+     scrolling()
   return (
     <Router>
         <div>
@@ -51,6 +68,13 @@ const App = () => {
             </Routes>
           </Suspense>
           <Footer activatedModal={activatedModal}/>
+          {
+        up?
+        <a style={{"display": "block", "position": "fixed", "bottom": "5px", "right": "5px", "cursor": "pointer"}} href="#nav">
+          <img style={{"width": "50px", "height": "50px", "objectFit": "fill"}} src={upF} alt="" />
+        </a>
+        :null
+      }
       </div>
     </Router>
   );

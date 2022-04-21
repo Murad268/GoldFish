@@ -14,7 +14,9 @@ import down from '../../images/slider/down.png'
 import GoodInfoPageBuy from '../goodInfoPageBuy/GoodInfoPageBuy';
 import { db } from '../../db';
 const GoodInfoPage = () => {
-   window.scrollTo(0, 0);
+   useEffect(() => {
+      window.scrollTo(0, 0);
+   }, [])
    const {goodId} = useParams()
    const res = new Services()
    const [goods, setGoods] = useState([])

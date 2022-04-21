@@ -75,7 +75,7 @@ const NavbarItems = () => {
                </ul>
      
             <div className="navbar__social__link">
-               <a href=""><img src={insta} alt="" /></a>
+               <a href="https://www.instagram.com/club.goldfish/"><img src={insta} alt="" /></a>
                <a href="https://vk.com/goldfishwargames"><img src={vk} alt="" /></a>
                <a href="https://www.facebook.com/magicgoldfish/"><img src={fb} alt="" /></a>
             </div>

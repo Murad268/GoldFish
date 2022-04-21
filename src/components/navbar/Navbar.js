@@ -10,7 +10,7 @@ import NavbarItems from '../navbarItems/NavbarItems';
 const Navbar = () => {
    return (
     <>
-      <div className="nav">
+      <div id='nav' className="nav">
        <div className="container">
          <div className="navbar__wrapper">
             <Link to="/" className="navbar__logo">
