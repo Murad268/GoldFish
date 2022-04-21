@@ -116,12 +116,14 @@ const CatalogPageItems = ({lists, goodNem, setGoodName, filterPost, setActive, o
               <div className="goods">
                   <div className="goods__wrapper">
                         {
+                           filteredItems.length > 1?
                            filteredItems.map(good => {
                              
-                                 return <GoodItem key={good.id} good={good}/>
-                              
+                              return <GoodItem key={good.id} good={good}/>
                            
-                         })
+                        
+                      })
+                      : <div className='noGood'>No product matching your request has been found</div>
                      }
                   </div>
                  
